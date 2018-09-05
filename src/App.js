@@ -12,18 +12,16 @@ class App extends Component {
   render() {
     return (
       <div className="App parallax">
-        <div className="container content">
-            <Nav
-            className="row"
-            />
+        <div className="container-fluid content">
+            <Nav className="row"/>
 
             <Welcome className="row"/>
 
-            <About className="row" />
+            <About />
 
-            <Projects className="row" />
+            <Projects />
 
-            <CV className="row" />
+            <CV />
 
             <Footer className="row" />
         </div>

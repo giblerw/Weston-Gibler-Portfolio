@@ -89,14 +89,55 @@
   min-height: 500px;
 }
 
+.about-left{
+  background-color: red;
+}
+
+.about-center{
+  background-color: yellow;
+}
+
+.about-right{
+  background-color: blue;
+}
+
 .projects_content {
   background-color: rgba(110,153,175,0.5);
   margin-top: 400px;
-  min-height: 500px;
+  padding-top: 50px;
 }
+
+.project_row_left {
+  min-height: 400px;
+  padding:20px;
+  background-color: blue;
+  margin-bottom: 30px;
+}
+
+.project_row_right {
+  min-height: 400px;
+  padding:20px;
+  margin-bottom: 30px;
+  background-color: red;
+}
+
+.project-left, .project-right {
+  background-color: orange;
+  min-height: 100%;
+  width: 100%;
+}
+
 
 .cv_content {
   background-color: rgba(110,153,175,0.5);
   margin-top: 400px;
-  min-height: 500px;
+}
+
+.resume {
+  background-image: url("./assets/WestonGiblerResume.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 75vh;
+  width: 100%;
 }

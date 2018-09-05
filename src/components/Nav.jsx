@@ -15,6 +15,13 @@ import {
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
+const Socials = () => (
+  <span className="social-icons">
+  <a href="" className="linked">1</a>
+  <a href="" className="github">2</a>
+  </span>
+)
+
 class Nav extends Component {
     constructor(props) {
         super(props);
@@ -34,13 +41,11 @@ class Nav extends Component {
         return (
             <Router>
                 <Navbar light expand="md" fixed="top" scrolling>
-                    <NavbarBrand className="logo" href="/">
-
-                    </NavbarBrand>
+                    <NavbarBrand className="logo" href="/"></NavbarBrand>
                     { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
                     <Collapse isOpen = { this.state.collapse } navbar>
                         <NavbarNav left>
-
+                          <Socials />
                         </NavbarNav>
                         <NavbarNav right>
                           <NavItem>
