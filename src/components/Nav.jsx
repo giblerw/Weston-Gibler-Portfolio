@@ -17,8 +17,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 const Socials = () => (
   <span className="social-icons">
-  <a href="" className="linked">1</a>
-  <a href="" className="github">2</a>
+  <a href="https://github.com/giblerw" className="github"></a>
+  <a href="https://www.linkedin.com/in/giblerw/" className="linked"></a>
   </span>
 )
 

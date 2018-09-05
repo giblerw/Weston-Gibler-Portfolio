@@ -36,6 +36,24 @@
   width: 100%;
 }
 
+.linked {
+  background-image: url("./assets/linked.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 15px;
+  margin-right: 15px;
+}
+
+.github {
+  background-image: url("./assets/github.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 15px;
+  margin-right: 15px;
+}
+
 .footer {
   background-color: rgba(110,153,175,0.5);
   width: 100%;
