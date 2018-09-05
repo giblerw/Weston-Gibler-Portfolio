@@ -4,7 +4,7 @@ class CV extends Component {
   render() {
     return(
       <div className="cv_content">
-        <h1>CV</h1>
+        <h1>R&#233;sum&#233;</h1>
       </div>
     )
   }

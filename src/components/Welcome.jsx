@@ -2,7 +2,9 @@ import React from 'react';
 
 const Welcome = () => (
   <div className="welcome-row">
+    <div className="buffer"></div>
     <div className="photo">
+      <div className="photo-div"></div>
     </div>
     <div className="intro">
       <h1>My name is Weston.</h1>
