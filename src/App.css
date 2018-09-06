@@ -110,17 +110,17 @@
 
 .about-left{
   background-color: red;
-  min-height: 500px;
+  /* min-height: 500px; */
 }
 
 .about-center{
   background-color: yellow;
-  min-height: 500px;
+  /* min-height: 500px; */
 }
 
 .about-right{
   background-color: blue;
-  min-height: 500px;
+  /* min-height: 500px; */
 }
 
 .projects_content {
@@ -142,20 +142,30 @@
 }
 
 .project_row {
-  min-height: 400px;
+  min-height: 600px;
   padding:20px;
   background-color: rgba(110,153,175,0.8);
   margin-bottom: 30px;
 }
 
-.project_content_row {
-  /* min-width: 100%; */
+.project_info_titles {
+  padding-left: 15px;
+
+}
+
+.project_info_content {
+  justify-content: center;
+  display: flex;
 }
 
 .project_content-left {
   background-color: red;
+  
 }
 
+.project_content_row {
+  height: 70%;
+}
 .project_content-center {
   background-color: forestgreen;
 }
