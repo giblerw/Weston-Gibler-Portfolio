@@ -16,10 +16,10 @@ import {
 import { BrowserRouter as Router } from 'react-router-dom';
 
 const Socials = () => (
-  <span className="social-icons">
+  <li className="social-icons">
   <a href="https://github.com/giblerw" className="github"></a>
   <a href="https://www.linkedin.com/in/giblerw/" className="linked"></a>
-  </span>
+  </li>
 )
 
 class Nav extends Component {
@@ -44,9 +44,6 @@ class Nav extends Component {
                     <NavbarBrand className="logo" href="/"></NavbarBrand>
                     { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
                     <Collapse isOpen = { this.state.collapse } navbar>
-                        <NavbarNav left>
-                          <Socials />
-                        </NavbarNav>
                         <NavbarNav right>
                           <NavItem>
                               <NavLink to="#">About Me</NavLink>
@@ -64,6 +61,7 @@ class Nav extends Component {
                                 </DropdownMenu>
                             </Dropdown>
                           </NavItem>
+                          <Socials className="social_icons"/>
                         </NavbarNav>
                     </Collapse>
                 </Navbar>

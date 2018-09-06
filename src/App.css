@@ -34,6 +34,8 @@
 .navbar {
   background-color: rgba(110,153,175,0.5);
   width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .linked {
@@ -52,6 +54,7 @@
   background-size: contain;
   padding: 15px;
   margin-right: 15px;
+  margin-left: 40px;
 }
 
 .footer {
@@ -102,53 +105,84 @@
 }
 
 .about_content {
-  background-color: rgba(110,153,175,0.5);
   margin-top: 400px;
-  min-height: 500px;
 }
 
 .about-left{
   background-color: red;
+  min-height: 500px;
 }
 
 .about-center{
   background-color: yellow;
+  min-height: 500px;
 }
 
 .about-right{
   background-color: blue;
+  min-height: 500px;
 }
 
 .projects_content {
-  background-color: rgba(110,153,175,0.5);
   margin-top: 400px;
-  padding-top: 50px;
 }
 
-.project_row_left {
+.projects_header, 
+.about_header,
+.resume_header {
+  text-align: left;
+}
+
+.section_header {
+  background-color: rgba(127,15,126,0.6);
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 6vh;
+  font-weight: 100;
+}
+
+.project_row {
   min-height: 400px;
   padding:20px;
-  background-color: blue;
+  background-color: rgba(110,153,175,0.8);
   margin-bottom: 30px;
 }
 
-.project_row_right {
-  min-height: 400px;
-  padding:20px;
-  margin-bottom: 30px;
+.project_content_row {
+  /* min-width: 100%; */
+}
+
+.project_content-left {
   background-color: red;
 }
 
-.project-left, .project-right {
-  background-color: orange;
-  min-height: 100%;
+.project_content-center {
+  background-color: forestgreen;
+}
+
+.project_content-right {
+  background-color: skyblue;
+}
+
+.project-left {
+  background-color: rgb(0, 162, 255);
   width: 100%;
 }
 
+.app_title, .app_subtitle {
+  padding-left: 10px;
+  text-align: left;
+}
 
+.cv_section {
+  margin-top: 400px;
+  margin-bottom: 20px;
+}
 .cv_content {
   background-color: rgba(110,153,175,0.5);
-  margin-top: 400px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 3%;
 }
 
 .resume {
