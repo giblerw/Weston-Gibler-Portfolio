@@ -144,7 +144,7 @@
 .project_row {
   min-height: 600px;
   padding:20px;
-  background-color: rgba(110,153,175,0.8);
+  background-color: rgba(180, 199, 209,0.9);
   margin-bottom: 30px;
 }
 
@@ -156,18 +156,19 @@
 .project_info_content {
   justify-content: center;
   display: flex;
+  margin-right:10px;
 }
 
 .project_content-left {
-  background-color: red;
+  /* background-color: red; */
   
 }
 
 .project_content_row {
-  height: 70%;
+  /* height: 70%; */
 }
 .project_content-center {
-  background-color: forestgreen;
+  background-color: rgba(127,15,126,0.8);
 }
 
 .project_content-right {
@@ -175,7 +176,7 @@
 }
 
 .project-left {
-  background-color: rgb(0, 162, 255);
+  background-color: rgb(220, 222, 248);
   width: 100%;
 }
 
