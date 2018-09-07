@@ -11,15 +11,17 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
+  Mask,
+  View,
   } from 'mdbreact';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
 const Socials = () => (
-  <li className="social-icons">
+  <div className="row align-items-center social-icons">
     <a href="https://github.com/giblerw" className="github" target="_blank"></a>
     <a href="https://www.linkedin.com/in/giblerw/" className="linked" target="_blank"></a>
-  </li>
+  </div>
 )
 
 class Nav extends Component {
@@ -39,33 +41,46 @@ class Nav extends Component {
     }
     render() {
         return (
-            <Router>
-                <Navbar light expand="md" fixed="top" scrolling>
-                    <NavbarBrand className="logo" href="/"></NavbarBrand>
-                    { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
-                    <Collapse isOpen = { this.state.collapse } navbar>
-                        <NavbarNav right>
-                          <NavItem>
-                              <NavLink to="#">About Me</NavLink>
-                          </NavItem>
-                          <NavItem>
-                              <NavLink to="#">Projects</NavLink>
-                          </NavItem>
-                          <NavItem>
-                            <Dropdown>
-                                <DropdownToggle nav caret>R&#233;sum&#233;</DropdownToggle>
-                                <DropdownMenu>
-                                    <DropdownItem href="#">Modal View</DropdownItem>
-                                    <DropdownItem href="#">Download PDF</DropdownItem>
-                                    <DropdownItem href="#">Download PNG</DropdownItem>
-                                </DropdownMenu>
-                            </Dropdown>
-                          </NavItem>
-                          <Socials className="social_icons"/>
-                        </NavbarNav>
-                    </Collapse>
-                </Navbar>
-            </Router>
+            <div>
+                <header>
+                    <Router>
+                        <Navbar color="transparent" expand="md" fixed="top" scrolling className="h6-responsive">
+                            <NavbarBrand className="logo" href="/"></NavbarBrand>
+                            { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
+                            <Collapse isOpen = { this.state.collapse } navbar>
+                                <NavbarNav left className="d-flex">
+                                <NavItem>
+                                    <NavLink to="#" className="nav-item-text">About Me</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink to="#" className="nav-item-text">Projects</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <Dropdown>
+                                        <DropdownToggle nav caret className="nav-item-text">R&#233;sum&#233;</DropdownToggle>
+                                        <DropdownMenu>
+                                            <DropdownItem href="#">Modal View</DropdownItem>
+                                            <DropdownItem href="#">Download PDF</DropdownItem>
+                                            <DropdownItem href="#">Download PNG</DropdownItem>
+                                        </DropdownMenu>
+                                    </Dropdown>
+                                </NavItem>
+                                </NavbarNav>
+                                <NavbarNav right>
+                                
+                                <Socials className="social_icons"/>
+                                </NavbarNav>
+                            </Collapse>
+                        </Navbar>
+                    </Router>
+
+                    <View src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/back6.jpg">
+                        <Mask overlay="purple-light" style={{flexDirection: 'column'}} className="flex-start text-white text-center">
+                        <h1>My name is, Weston.</h1>
+                        </Mask>
+                    </View>
+                </header>
+            </div>
         );
     }
 }

@@ -7,10 +7,10 @@ const Welcome = () => (
       <div className="photo-div"></div>
     </div>
     <div className="intro">
-      <h1>My name is Weston.</h1>
+      <h1 className="h1-responsive text-left">My name is <b>Weston.</b></h1>
     </div>
     <div className="title">
-      <h2>I am a full stack, Web and iOS Developer.</h2>
+      <h2 className="h2-responsive text-left">I am a <em>Full Stack</em>, <b>Web</b> & <b>iOS,</b> Software Developer.</h2>
     </div>
   </div>
 )
