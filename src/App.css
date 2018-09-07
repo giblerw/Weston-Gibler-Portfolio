@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   color: rgba(255,255,255,0.7);
+  position: relative;
 }
 
 .parallax {
@@ -18,7 +19,7 @@
 }
 
 .logo {
-  background-image: url("./assets/initials.png");
+  background-image: url("https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/initialsBig.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +40,10 @@
   padding-bottom: 0;
   height: 60px;
   box-shadow: 0 5px 10px -3px rgba(40,200,200,0.75);
+}
+
+.pro-butt {
+  width: 100%;
 }
 
 .top-nav-collapse {

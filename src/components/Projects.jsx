@@ -120,15 +120,15 @@ class Projects extends Component {
               <div className="row project_content_row">
                 <div className="col-lg-3 col-md-6 col-sm-8 project_content-left">
                   <div className="row project_info_titles">
-                    {project.github !== null ? 
-                    <a href={project.github} alt="github repo" target="_blank">
-                      <Button color="unique" outline>Github</Button>
-                    </a> : ''}
-                    {project.url !== null ? 
-                    <a href={project.github} alt="github repo" target="_blank">
-                      <Button color="unique" rounded>Visit Site</Button>
-                    </a> : ''}
-                    <Button color="unique" rounded>Gallery</Button>
+                    {
+                      project.github !== null ? 
+                          <Button href={project.github} alt="github repo" target="_blank" color="elegant" block>Github</Button> : ''
+                    }
+                    {
+                      project.url !== null ? 
+                          <Button href={project.github} alt="github repo" target="_blank" color="indigo" block>Visit Site</Button>: ''
+                    }
+                    <Button rounded color="unique" block>Gallery</Button>
                   </div>
                   <div className="row project_info_content">
                     CONTENT

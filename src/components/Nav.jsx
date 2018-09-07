@@ -15,7 +15,7 @@ import {
   View,
   } from 'mdbreact';
 
-import { BrowserRouter as Router } from 'react-router-dom';
+  import { BrowserRouter as Router } from 'react-router-dom';
 
 const Socials = () => (
   <div className="row align-items-center social-icons">
@@ -31,48 +31,47 @@ class Nav extends Component {
             collapse: false,
             isWideEnough: false,
         };
-    this.onClick = this.onClick.bind(this);
+        this.onClick = this.onClick.bind(this);
     }
 
-    onClick(){
+    onClick() {
         this.setState({
             collapse: !this.state.collapse,
         });
     }
+
     render() {
         return (
-            <div>
+            <Router>
                 <header>
-                    <Router>
-                        <Navbar color="transparent" expand="md" fixed="top" scrolling className="h6-responsive">
-                            <NavbarBrand className="logo" href="/"></NavbarBrand>
-                            { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
-                            <Collapse isOpen = { this.state.collapse } navbar>
-                                <NavbarNav left className="d-flex">
-                                <NavItem>
-                                    <NavLink to="#" className="nav-item-text">About Me</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink to="#" className="nav-item-text">Projects</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <Dropdown>
-                                        <DropdownToggle nav caret className="nav-item-text">R&#233;sum&#233;</DropdownToggle>
-                                        <DropdownMenu>
-                                            <DropdownItem href="#">Modal View</DropdownItem>
-                                            <DropdownItem href="#">Download PDF</DropdownItem>
-                                            <DropdownItem href="#">Download PNG</DropdownItem>
-                                        </DropdownMenu>
-                                    </Dropdown>
-                                </NavItem>
-                                </NavbarNav>
-                                <NavbarNav right>
-                                
-                                <Socials className="social_icons"/>
-                                </NavbarNav>
-                            </Collapse>
-                        </Navbar>
-                    </Router>
+                    <Navbar color="transparent" expand="md" fixed="top" scrolling className="h6-responsive">
+                        <NavbarBrand className="logo" tag="span"></NavbarBrand>
+                        { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
+                        <Collapse isOpen = { this.state.collapse } navbar>
+                            <NavbarNav left className="d-flex">
+                            <NavItem>
+                                <NavLink to="#aboutMe" href="#aboutMe" className="nav-item-text">About Me</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink to="#" className="nav-item-text">Projects</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <Dropdown>
+                                    <DropdownToggle nav caret className="nav-item-text">R&#233;sum&#233;</DropdownToggle>
+                                    <DropdownMenu>
+                                        <DropdownItem href="#">Modal View</DropdownItem>
+                                        <DropdownItem href="#">Download PDF</DropdownItem>
+                                        <DropdownItem href="#">Download PNG</DropdownItem>
+                                    </DropdownMenu>
+                                </Dropdown>
+                            </NavItem>
+                            </NavbarNav>
+                            <NavbarNav right>
+                            
+                            <Socials className="social_icons"/>
+                            </NavbarNav>
+                        </Collapse>
+                    </Navbar>
 
                     <View src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/back6.jpg">
                         <Mask overlay="purple-light" style={{flexDirection: 'column'}} className="flex-start text-white text-center">
@@ -80,7 +79,7 @@ class Nav extends Component {
                         </Mask>
                     </View>
                 </header>
-            </div>
+            </Router>
         );
     }
 }

@@ -11,17 +11,17 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App parallax">
+      <div className="App parallax" data-spy="scroll" data-target=".navbar" data-offset="50">
         <div className="container-fluid content">
             <Nav className="row"/>
 
             <Welcome className="row"/>
 
-            <About />
+            <About id="about"/>
 
-            <Projects />
+            <Projects id="projects"/>
 
-            <CV />
+            <CV id="resume"/>
 
             <Footer className="row" />
         </div>
