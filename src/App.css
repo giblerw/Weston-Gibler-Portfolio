@@ -42,8 +42,14 @@
   box-shadow: 0 5px 10px -3px rgba(40,200,200,0.75);
 }
 
-.pro-butt {
-  width: 100%;
+.pro_butt {
+  padding:10px 3px 3px 0;
+  font-size: 1.1em;
+}
+
+.buffer {
+  width:100%;
+  max-height:30px;
 }
 
 .top-nav-collapse {

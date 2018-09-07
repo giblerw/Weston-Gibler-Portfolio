@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ListGroup, ListGroupItem, Button } from 'mdbreact';
+import { ListGroup, ListGroupItem, Button, Fa } from 'mdbreact';
 
 const projects = [
   {
@@ -118,21 +118,29 @@ class Projects extends Component {
               <strong className="row app_title display-4">{project.title}</strong>
               <p className="app_subtitle h4-responsive text-muted">"{project.tagLine}"</p>
               <div className="row project_content_row">
-                <div className="col-lg-3 col-md-6 col-sm-8 project_content-left">
-                  <div className="row project_info_titles">
-                    {
-                      project.github !== null ? 
-                          <Button href={project.github} alt="github repo" target="_blank" color="elegant" block>Github</Button> : ''
-                    }
-                    {
-                      project.url !== null ? 
-                          <Button href={project.github} alt="github repo" target="_blank" color="indigo" block>Visit Site</Button>: ''
-                    }
-                    <Button rounded color="unique" block>Gallery</Button>
-                  </div>
+                <div className="col-lg-3 col-md-6 col-sm-8 project_content-left d-flex flex-column justify-content-end">
+
                   <div className="row project_info_content">
                     CONTENT
                   </div>
+
+                  <div className="row project_info_titles">
+                    <Button rounded color="secondary" block className="pro_butt"><i className="fa fa-photo fa-4x" aria-hidden="true"></i> Visual Gallery</Button>
+                  <div className="buffer"></div>
+                    {
+                      project.github !== null ? 
+                          <Button href={project.github} alt="github repo" target="_blank" color="elegant" block className="pro_butt d-flex justify-content-between align-items-end">
+                          <i className="fa fa-github fa-2x" aria-hidden="true"></i> Github</Button> : ''
+                    }
+                    <div className="buffer"></div>
+                    {
+                      project.url !== null ? 
+                          <Button href={project.github} alt="github repo" target="_blank" color="indigo" block className="pro_butt d-flex justify-content-between align-items-end">
+                          <i className="fa fa-chrome fa-2x" aria-hidden="true"></i> Visit Site</Button>: ''
+                    }
+                    
+                  </div>
+            
                 </div>
                 <div className="col-lg-3 col-md-6 project_content-center">
                   <div className="row project_info_titles">
