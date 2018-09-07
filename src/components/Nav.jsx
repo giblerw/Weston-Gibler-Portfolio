@@ -48,26 +48,21 @@ class Nav extends Component {
                         <NavbarBrand className="logo" tag="span"></NavbarBrand>
                         { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
                         <Collapse isOpen = { this.state.collapse } navbar>
-                            <NavbarNav left className="d-flex">
-                            <NavItem>
-                                <NavLink to="#aboutMe" href="#aboutMe" className="nav-item-text">About Me</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink to="#" className="nav-item-text">Projects</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <Dropdown>
-                                    <DropdownToggle nav caret className="nav-item-text">R&#233;sum&#233;</DropdownToggle>
-                                    <DropdownMenu>
-                                        <DropdownItem href="#">Modal View</DropdownItem>
-                                        <DropdownItem href="#">Download PDF</DropdownItem>
-                                        <DropdownItem href="#">Download PNG</DropdownItem>
-                                    </DropdownMenu>
-                                </Dropdown>
-                            </NavItem>
-                            </NavbarNav>
-                            <NavbarNav right>
-                            
+                            <NavbarNav center>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-transparent active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked /> WDG
+                                </label>
+                                <label class="btn btn-transparent">
+                                    <input type="radio" name="options" id="option2" autocomplete="off" /> About Me
+                                </label>
+                                <label class="btn btn-transparent">
+                                    <input type="radio" name="options" id="option3" autocomplete="off" /> Projects
+                                </label>
+                                <label class="btn btn-transparent">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" /> R&#233;sum&#233;
+                                </label>
+                            </div>
                             <Socials className="social_icons"/>
                             </NavbarNav>
                         </Collapse>
