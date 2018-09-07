@@ -15,13 +15,12 @@ const projects = [
       {name: 'AWS Lambda', url: 'https://aws.amazon.com/lambda/'},
       {name: 'React-MD', url: 'https://github.com/mlaursen/react-md'},
     ],
-    info: 'Campaign manager was just one of four modules being built for this enterprise. The main focus of the team was to build features that would scale well and would be easy for another developer to pick up and read. By utilizing the most current/tested technologies and libraries, this particular suite of IoT management and deployment tools is ready to scale up to its demand of 50,000 new cloud users within the first year of launch.',
+    info: 'Campaign Manager was just one of four modules being built for this enterprise. The main focus of the team was to build features that would scale well and would be easy for another developer to pick up and read. By utilizing the most current/tested technologies and libraries, this particular suite of IoT management and deployment tools is ready to scale up to its demand of 50,000 new cloud users within the first year of launch.',
     github: null,
     url: 'http://www.fwicloud.com/',
-    photos: ['https://s3-us-west-2.amazonaws.com/miked-portfolio-site/clib.png', 'https://s3-us-west-2.amazonaws.com/miked-portfolio-site/clib-tables.png'],
-    cover1: '',
-    cover2: '',
+    photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/FWI.png', 'https://s3-us-west-2.amazonaws.com/miked-portfolio-site/clib.png', 'https://s3-us-west-2.amazonaws.com/miked-portfolio-site/clib-tables.png'],
     objectId: 1,
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/cloud.png',
   },
   {
     title: 'Roofstops',
@@ -45,6 +44,7 @@ const projects = [
     url: null,
     photos: [],
     objectId: 2,
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/roof.png',
   },
   {
     title: 'pHOODz',
@@ -61,6 +61,7 @@ const projects = [
     url: null,
     photos: [],
     objectId: 3,
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/swift.png',
   },
   {
     title: 'Hall of Recall',
@@ -81,6 +82,7 @@ const projects = [
     url: 'https://the-hall-of-recall.herokuapp.com/',
     photos: [],
     objectId: 4,
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/phaser.png',
   },
   {
     title: 'In a Box',
@@ -96,6 +98,7 @@ const projects = [
     url: 'https://westons-react-inbox.firebaseapp.com/',
     photos: [],
     objectId: 5,
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/react.png',
   },
 ];
 
@@ -109,9 +112,13 @@ class Projects extends Component {
         return (
           <div className="row project_row d-flex justify-content-around" key={project.objectId}>
 
-            <div className="col-lg-4 col-md-6 d-flex flex-lg-column flex-row justify-content-lg-around project-left">
-              <img src={project.cover1} atl="project cover" className="img-fluid"/>
-              <img src={project.cover2} atl="project cover" className="img-fluid"/>
+            <div className="col-lg-4 col-md-6 d-flex flex-lg-column flex-row justify-content-start project-left">
+              <div className="col-12 cover_img1 d-flex flex-column justify-content-center">
+                <img src={project.photos[0]} atl="project cover" className="img-fluid"/>
+              </div>
+              <div className="col-12 cover_img2 d-flex flex-column justify-content-center">
+                <img src={project.photos[1]} atl="project cover" className="img-fluid"/>
+              </div>
             </div>
 
             <div className="container col-md-8 project-center">
@@ -120,12 +127,12 @@ class Projects extends Component {
               <div className="row project_content_row">
                 <div className="col-lg-3 col-md-6 col-sm-8 project_content-left d-flex flex-column justify-content-end">
 
-                  <div className="row project_info_content">
-                    CONTENT
+                  <div className="row project_badge flex-row justify-content-end ">
+                    <img src={project.icon} alt="content logo" className="img-fluid project_content_logo"/>
                   </div>
 
                   <div className="row project_info_titles">
-                    <Button rounded color="secondary" block className="pro_butt"><i className="fa fa-photo fa-4x" aria-hidden="true"></i> Visual Gallery</Button>
+                    <Button rounded color="info" block className="pro_butt"><i className="fa fa-photo fa-4x" aria-hidden="true"></i> Visual Gallery</Button>
                   <div className="buffer"></div>
                     {
                       project.github !== null ? 
@@ -135,14 +142,14 @@ class Projects extends Component {
                     <div className="buffer"></div>
                     {
                       project.url !== null ? 
-                          <Button href={project.github} alt="github repo" target="_blank" color="indigo" block className="pro_butt d-flex justify-content-between align-items-end">
+                          <Button href={project.github} alt="github repo" target="_blank" color="default" block className="pro_butt d-flex justify-content-between align-items-end">
                           <i className="fa fa-chrome fa-2x" aria-hidden="true"></i> Visit Site</Button>: ''
                     }
                     
                   </div>
             
                 </div>
-                <div className="col-lg-3 col-md-6 project_content-center">
+                <div className="col-lg-3 col-md-6 project_content-center text-right">
                   <div className="row project_info_titles">
                     <em className="h4-responsive">Tech Stack</em>
                   </div>
@@ -159,9 +166,9 @@ class Projects extends Component {
                 <div className="col-lg-6 project_content-right">
                   
                   <div className="row project_info_content">
-                    <blockquote className="blockquote purple-text">
-                      <p className="bq-title text-muted">{project.format}</p>
-                      <p>{project.info}</p>
+                    <blockquote className="blockquote light-grey-text">
+                      <p className="text-left">{project.info}</p>
+                      <p className="bq-title">{project.format}</p>
                     </blockquote>
                   </div>
                 </div>

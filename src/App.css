@@ -188,25 +188,35 @@
   margin-right:10px;
 }
 
-.project_content-left {
-  /* background-color: red; */
-  
+.project_badge {
+  max-height: 65%;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+.project_content_logo {
+  max-height: 200px;
+  /* max-width: 100%; */
+  padding: 5% 5% 5% 5%;
+  opacity: 0.3;
 }
 
-.project_content_row {
-  /* height: 70%; */
-}
 .project_content-center {
-  background-color: rgba(127,15,126,0.8);
+  background-color: rgba(86, 88, 88, 0.8);
+  font-weight: 600;
 }
 
 .project_content-right {
-  background-color: skyblue;
+  background-color: rgb(37, 60, 70);
+  padding-top: 5%;
 }
 
 .project-left {
-  background-color: rgb(220, 222, 248);
-  width: 100%;
+  background-color: rgba(37, 60, 70, 0.6);
+  
+}
+
+.cover_img1, .cover_img2 {
+  max-height: 45%;
 }
 
 .app_title, .app_subtitle {
