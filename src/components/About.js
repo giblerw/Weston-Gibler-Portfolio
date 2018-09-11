@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const me = 
+const me =
   {
     whatIBring: [
       'A contagious need to be continually learning about new, emerging technologies/industry trends.',
@@ -30,14 +30,18 @@ const me =
 
 
 class About extends Component {
-  
+
   render() {
     return(
       <div className="about_content" id="about">
-      <span className="row section_header about_header">
-      <u>About Me</u>
-      <img className="header_logo" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/initialsBig.png" alt="golden_ratio" />
-      </span>
+
+        <span className="row section_header about_header">
+        <div className="header_mask">
+        <img className="header_logo" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/initialsBig.png" alt="golden_ratio" />
+        <u>About Me</u>
+        </div>
+        </span>
+
         <div className="row">
           <div className="col-md-3 about-left">
             <h3>I am a <br/> Colorado native...<br/>

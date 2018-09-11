@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
   Navbar,
   NavItem,
-  NavLink,
   NavbarNav,
   NavbarToggler,
   NavbarBrand,
@@ -10,6 +9,8 @@ import {
   Mask,
   View,
   } from 'mdbreact';
+
+  import { NavLink } from 'react-router-dom'
 
   // import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -61,15 +62,15 @@ class Nav extends Component {
                         </NavbarNav>
                         <NavbarNav right>
                           <NavItem>  
-                            <NavLink 
-                            to="#home" 
+                            <NavLink
+                            to="/home"  
                             class="btn btn-transparent active nav-link">
                                 Home
                             </NavLink>
                           </NavItem>  
                           <NavItem>  
                             <NavLink 
-                            to="#about" 
+                            to="/about" 
                             class="btn btn-transparent nav-link" 
                             >
                                 About Me
@@ -77,7 +78,7 @@ class Nav extends Component {
                           </NavItem>  
                           <NavItem>  
                             <NavLink 
-                            to="#projects" 
+                            to="/projects" 
                             class="btn btn-transparent nav-link"
                             >
                                 Projects
@@ -85,7 +86,7 @@ class Nav extends Component {
                           </NavItem>  
                           <NavItem>  
                             <NavLink 
-                            to="#resume" 
+                            to="/resume" 
                             class="btn btn-transparent nav-link"
                             >
                                 R&#233;sum&#233;

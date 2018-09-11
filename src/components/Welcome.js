@@ -4,7 +4,7 @@ const Welcome = () => (
   <div className="welcome-row" id="home">
     <div className="buffer"></div>
     <div className="photo">
-      <div className="photo-div"></div>
+      <div className="img photo-div"/>
     </div>
     <div className="intro">
       <h1 className="h1-responsive text-left">My name is <b className="larger-text-bump">Weston.</b></h1>
