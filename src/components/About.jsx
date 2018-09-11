@@ -17,9 +17,9 @@ const me =
       'I’ve been called a Git guru, but don\'t quote me.'
     ],
     whatIWant: [
-      'Develop delightful UI features, by utilizing the most innovative, and scalable libraries available.',
-      'Build shareable component libraries; emphasizing code readability, not just functionality',
-      'Write quality unit tests to facilitate debugging; also helps isolate state changes within components.',
+      'Developing delightful UI features, by utilizing the most innovative, and scalable libraries available.',
+      'Building shareable component libraries; emphasizing code readability, not just functionality',
+      'Writing quality unit tests to facilitate debugging.',
       'Stretch the UI/UX designs, in a scalable way.',
       'Help set standards and best practices that make sense to the team.',
       'Make software that is lean and mean.',
@@ -34,29 +34,33 @@ class About extends Component {
   render() {
     return(
       <div className="about_content">
-      <span className="row section_header about_header"><u>About Me</u></span>
+      <span className="row section_header about_header">
+      <img className="header_logo" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/triP.png" alt="golden_ratio" />
+      <u>About Me</u>
+      </span>
         <div className="row">
           <div className="col-md-3 about-left">
-          <h2>I am a <br/> Colorado native...<br/>
-            <img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/axHead.png" alt="axMan" className="about_img1" />
-            <br /><h2>...and generally much happier than this picture would lead you to believe.</h2>
-          </h2>
+            <h3>I am a <br/> Colorado native...<br/>
+              <img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/axHead.png" alt="axMan" className="about_img1" />
+              <br /><h3>...and generally much happier than this picture would lead you to believe.</h3>
+            </h3>
           </div>
-          <div className="col-md-6 about-center">
-          <h2>What I bring...</h2>
-          <p className="about_bring_text">
-            <ul>
-              {me.whatIBring.map(note => <li className="h4-responsive">{note}</li>)}
-            </ul>
-          </p>
+          <div className="col-md-5 about-center">
+            <h2 className="about_header1">Skills I bring as a developer...</h2>
+            <blockquote className="about_bring_text">
+              <ul>
+                {me.whatIBring.map(note => <li className="h5-responsive">{note}</li>)}
+              </ul>
+            </blockquote>
           </div>
-          <div className="col-md-3 about-right">
-          <h2>What I want...</h2>
-          <p className="about_want_text">
-            <ul>
-              {me.whatIWant.map(point => <li>{point}</li>)}
-            </ul>
-          </p>
+          <div className="col-md-4 about-right">
+            <img className="about_triangle" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/gold.png" alt="triangle_logo" />
+            <h2 className="about_header2">Current focuses include:</h2>
+            <p className="about_want_text">
+              <ul>
+                {me.whatIWant.map(point => <li className="h5-responsive">{point}</li>)}
+              </ul>
+            </p>
           </div>
         </div>
       </div>

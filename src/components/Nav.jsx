@@ -13,10 +13,12 @@ import {
 
 const Socials = () => (
   <div className="row align-items-center social-icons">
-    <a href="https://github.com/giblerw" className="github" target="_blank">
+    <a href="https://github.com/giblerw" className="github" target="_blank" rel="noopener noreferrer">
     <img className="github_icon" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/github-icon.png" alt="githubIcon" />
     </a>
-    <a href="https://www.linkedin.com/in/giblerw/" className="linked" target="_blank"></a>
+    <a href="https://www.linkedin.com/in/giblerw/" className="linked" target="_blank" rel="noopener noreferrer">
+    <img className="linkedin_icon" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/linkedin-icon.png" alt="linkinIcon" />
+    </a>
   </div>
 )
 
@@ -46,17 +48,17 @@ class Nav extends Component {
                         <Collapse isOpen = { this.state.collapse } navbar>
                             <NavbarNav center>
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-transparent active">
-                                    <input type="radio" name="options" id="option1" autocomplete="off" checked /> WDG
+                                <label class="btn btn-transparent active nav-item-text">
+                                    WDG
                                 </label>
-                                <label class="btn btn-transparent">
-                                    <input type="radio" name="options" id="option2" autocomplete="off" /> About Me
+                                <label class="btn btn-transparent nav-item-text">
+                                    About Me
                                 </label>
-                                <label class="btn btn-transparent">
-                                    <input type="radio" name="options" id="option3" autocomplete="off" /> Projects
+                                <label class="btn btn-transparent nav-item-text">
+                                    Projects
                                 </label>
-                                <label class="btn btn-transparent">
-                                    <input type="radio" name="options" id="option1" autocomplete="off" /> R&#233;sum&#233;
+                                <label class="btn btn-transparent nav-item-text">
+                                    R&#233;sum&#233;
                                 </label>
                             </div>
                             <Socials className="social_icons"/>
