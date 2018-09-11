@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Welcome = () => (
-  <div className="welcome-row">
+  <div className="welcome-row" id="home">
     <div className="buffer"></div>
     <div className="photo">
       <div className="photo-div"></div>

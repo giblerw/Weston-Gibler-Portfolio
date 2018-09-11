@@ -9,21 +9,22 @@ import Footer from './components/Footer';
 import './App.css';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App parallax" data-spy="scroll" data-target=".navbar" data-offset="50">
-        <div className="container-fluid content">
-            <Nav className="row"/>
+        <div className="container-fluid content" >
+            <Nav className="row layout_section" />
 
-            <Welcome className="row"/>
+            <Welcome className="row layout_section"/>
 
-            <About id="about"/>
+            <About className="layout_section"/>
 
-            <Projects id="projects"/>
+            <Projects className="layout_section"/>
 
-            <CV id="resume"/>
+            <CV className="layout_section"/>
 
-            <Footer className="row" />
+            <Footer className="layout_section" />
         </div>
       </div>
     );

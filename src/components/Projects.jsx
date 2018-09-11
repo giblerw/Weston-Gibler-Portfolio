@@ -147,7 +147,7 @@ const ActionButtons = ({project}) => {
 class Projects extends Component {
   render() {
     return(
-      <div className="container-fluid projects_content">
+      <div className="container-fluid projects_content" id="projects">
       <span className="row section_header projects_header">
       <img className="header_logo" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/gold.png" alt="golden_ratio" />
       <u>Projects</u>

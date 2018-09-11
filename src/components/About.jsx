@@ -33,7 +33,7 @@ class About extends Component {
   
   render() {
     return(
-      <div className="about_content">
+      <div className="about_content" id="about">
       <span className="row section_header about_header">
       <img className="header_logo" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/triP.png" alt="golden_ratio" />
       <u>About Me</u>
