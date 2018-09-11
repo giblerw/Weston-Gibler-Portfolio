@@ -225,10 +225,10 @@
 }
 
 .project_row {
-  min-height: 600px;
+  height: 500px;
   padding:20px;
   background-color: rgba(180, 199, 209,0.9);
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .project_info_titles {
@@ -254,6 +254,10 @@
   border-radius: 160px 50px 200px 10px;
 }
 
+.project_content-left {
+  margin-bottom: 5%;
+}
+
 .stack-label {
   color: rgb(37, 60, 70);
   font-size: 1.2em;
@@ -262,9 +266,10 @@
 
 .project_content-right {
   background-color: rgb(37, 60, 70);
-  margin-top: 6%;
-  padding-top: 5%;
-  border-radius: 100px 5px 100px 5px;
+  margin-top: 0;
+  padding-top: 0;
+  border-radius: 80px 5px 100px 5px;
+  
 }
 
 .project-left {
@@ -281,7 +286,7 @@
   width:80%;
 }
 
-.app_title, .app_subtitle {
+.app_title {
   padding-left: 10px;
   text-align: left;
 }

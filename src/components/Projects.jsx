@@ -167,7 +167,6 @@ class Projects extends Component {
                   <ActionButtons project={project} />
                 </span>
               </div>
-              <p className="app_subtitle h4-responsive text-muted">"{project.tagLine}"</p>
               <div className="row project_content_row">
                 <div className="col-lg-6 project_content-right">
                   <div className="row project_info_content">
