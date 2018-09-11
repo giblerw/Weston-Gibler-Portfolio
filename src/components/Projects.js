@@ -72,12 +72,12 @@ class Projects extends Component {
                 <div className="col-lg-6 project_content-right">
                   <div className="row project_info_content">
                     <blockquote className="blockquote light-grey-text">
-                      <p className="text-left">{project.info}</p>
                       <p className="bq-title">{project.format}</p>
+                      <p className="text-left">{project.info}</p>
                     </blockquote>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-6 project_content-center text-left d-flex flex-column align-items-end">
+                <div className="col-lg-3 col-md-5 project_content-center text-right d-flex flex-column align-items-end">
                   <div className="row project_info_titles">
                     <em className="stack-label">Tech Stack</em>
                   </div>
@@ -92,7 +92,7 @@ class Projects extends Component {
                   </ListGroup>
                 </div>
                 <div className="col-lg-3 col-md-6 col-sm-8 project_content-left d-flex flex-column justify-content-between">
-                  <Button className="row btn btn-indigo gallery">
+                  <Button className="row btn btn-indigo gallery disabled">
                   <i className="fa fa-photo fa-2x" aria-hidden="true"></i> Photo Gallery
                   </Button>
                   <div className="row project_badge">
