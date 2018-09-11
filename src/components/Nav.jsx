@@ -5,12 +5,6 @@ import {
   NavbarNav,
   NavbarToggler,
   Collapse,
-  NavItem,
-  NavLink,
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   Mask,
   View,
   } from 'mdbreact';
@@ -19,7 +13,9 @@ import {
 
 const Socials = () => (
   <div className="row align-items-center social-icons">
-    <a href="https://github.com/giblerw" className="github" target="_blank"></a>
+    <a href="https://github.com/giblerw" className="github" target="_blank">
+    <img className="github_icon" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/github-icon.png" alt="githubIcon" />
+    </a>
     <a href="https://www.linkedin.com/in/giblerw/" className="linked" target="_blank"></a>
   </div>
 )
@@ -44,8 +40,8 @@ class Nav extends Component {
         return (
             <Router>
                 <header>
-                    <Navbar color="transparent" expand="md" fixed="top" scrolling className="h6-responsive">
-                        <NavbarBrand className="logo" tag="span"></NavbarBrand>
+                    <Navbar id="navie" expand="md" fixed="top" scrolling className="h6-responsive">
+                        <NavbarBrand className="logo" tag="img" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/initialsBig.png" alt=""></NavbarBrand>
                         { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
                         <Collapse isOpen = { this.state.collapse } navbar>
                             <NavbarNav center>

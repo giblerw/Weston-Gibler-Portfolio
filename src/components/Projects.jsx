@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ListGroup, ListGroupItem, Button, Fa } from 'mdbreact';
+import { ListGroup, ListGroupItem, Button } from 'mdbreact';
 
 const projects = [
   {
@@ -106,10 +106,10 @@ const projects = [
 const NotMobilePictureFrame = ({project}) => (
   <div className="col-lg-4 col-md-6 d-flex flex-lg-column flex-row justify-content-start project-left">
     <div className="col-12 cover_img1 d-flex flex-column justify-content-center">
-      <img src={project.photos[0]} atl="project cover" className="img-fluid"/>
+      <img src={project.photos[0]} alt="project cover" className="img-fluid"/>
     </div>
     <div className="col-12 cover_img2 d-flex flex-column justify-content-center">
-      <img src={project.photos[1]} atl="project cover" className="img-fluid"/>
+      <img src={project.photos[1]} alt="project cover" className="img-fluid"/>
     </div>
   </div>
   )
@@ -117,7 +117,7 @@ const NotMobilePictureFrame = ({project}) => (
 const MobilePictueFrame = ({project}) => (
   <div className="col-lg-4 col-md-6 d-flex flex-lg-column flex-row justify-content-start project-left">
     <div className="col-12 cover_img_full d-flex flex-column align-self-center justify-content-around">
-      <img src={project.photos[0]} atl="project cover" className="img-fluid"/>
+      <img src={project.photos[0]} alt="project cover" className="img-fluid"/>
     </div>
   </div>
   )
@@ -136,7 +136,7 @@ const ActionButtons = ({project}) => {
               <Button href={project.url} alt="Live Website" target="_blank" className="btn btn-blue-grey pro_butt">
               <i className="fa fa-desktop fa-2x" aria-hidden="true"></i> Visit Website</Button>: 
               <Button href={project.url} alt="Live Website" target="_blank" className="btn btn-blue-grey pro_butt disabled">
-              <i className="fa fa-ban fa-2x" aria-hidden="true"></i> Unavailable</Button>
+              <i className="fa fa-ban fa-2x" aria-hidden="true"></i> No Website</Button>
         }
       </div>
     )
@@ -188,8 +188,8 @@ class Projects extends Component {
                       )}
                   </ListGroup>
                 </div>
-                <div className="col-lg-3 col-md-6 col-sm-8 project_content-left d-flex flex-column justify-content-around">
-                  <div className="row project_badge flex-row align-items-center ">
+                <div className="col-lg-3 col-md-6 col-sm-8 project_content-left d-flex flex-column justify-content-end">
+                  <div className="row project_badge">
                     <img src={project.icon} alt="content logo" className="img-fluid project_content_logo"/>
                   </div>
                 </div>
