@@ -14,9 +14,9 @@ const NotMobilePictureFrame = ({project}) => (
   )
 
 const MobilePictueFrame = ({project}) => (
-  <div className="col-lg-4 col-md-6 d-flex flex-lg-column flex-row justify-content-start project-left">
-    <div className="col-12 cover_img_full d-flex flex-column align-self-center justify-content-around">
-      <img src={project.photos[0]} alt="project cover" className="img-fluid"/>
+  <div className="col-lg-4 col-md-6 d-flex flex-lg-column project-left">
+    <div className="col-12 d-flex flex-row justify-content-center">
+      <img src={project.photos[0]} alt="project cover" className="img-fluid cover_img_full align-self-center"/>
     </div>
   </div>
   )
@@ -84,7 +84,7 @@ class Projects extends Component {
                   <ListGroup className="row project_info_content flex-row justify-content-stretch">
                     {myStack.map(tech => {
                       return(
-                        <ListGroupItem href={tech.url} target="_blank" hover className="p-1 d-inline-block text-truncate d-flex flex-column align-self-center justify-content-around techItem">
+                        <ListGroupItem href={tech.url} target="_blank" hover className="p-1 d-inline-block text-truncate d-flex flex-column align-self-center techItem">
                           {tech.name}
                         </ListGroupItem>
                         )}
