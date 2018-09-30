@@ -50,27 +50,27 @@ class About extends Component {
 
         <div className="row about_content">
           <div className="col-md-3 about-left">
-            <h3>I am cursed by an insatiable need to be incessantly learning...<br/>
+            <span><h3>I am cursed by an insatiable need to be incessantly learning...</h3><br/>
               <img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/axHead.png" alt="axMan" className="about_img1" />
-              <br /><h3>...and generally much happier than this picture would lead you to believe.</h3>
-            </h3>
+              <br /><h3>...and I&#39;m generally much happier than this picture would lead you to believe.</h3>
+            </span>
           </div>
           <div className="col-md-5 about-center">
             <h2 className="about_header1">Web specific skills:</h2>
             <blockquote className="about_bring_text">
               <ul>
-                {me.whatIBring.map(note => <li className="h5-responsive">{note}</li>)}
+                {me.whatIBring.map((note, index) => <li key={index} className="h5-responsive">{note}</li>)}
               </ul>
             </blockquote>
           </div>
           <div className="col-md-4 about-right">
             <img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/swift.png" alt="swiftLogo" className="swiftLogo" />
             <h2 className="about_header2">iOS specific skills:</h2>
-            <p className="about_want_text">
+            <div className="about_want_text">
               <ul>
-                {me.iOS.map(point => <li className="h5-responsive">{point}</li>)}
+                {me.iOS.map((point, index) => <li key={index} className="h5-responsive">{point}</li>)}
               </ul>
-            </p>
+            </div>
           </div>
         </div>
       </div>

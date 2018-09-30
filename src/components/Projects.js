@@ -23,7 +23,7 @@ const MobilePictueFrame = ({project}) => (
 
 const ActionButtons = ({project}) => {
     return(
-      <div class="btn-group" role="group" aria-label="Project Actions d-flex">
+      <div className="btn-group" role="group" aria-label="Project Actions d-flex">
         {project.github !== null ?
             <Button href={project.github} alt="github repo" target="_blank" className=" btn pro_butt gitActive">
             <i className="fa fa-github fa-2x" aria-hidden="true"></i> Source Code</Button> :
@@ -82,9 +82,9 @@ class Projects extends Component {
                     <em className="stack-label">Tech Stack</em>
                   </div>
                   <ListGroup className="row project_info_content flex-row justify-content-stretch">
-                    {myStack.map(tech => {
+                    {myStack.map((tech, index) => {
                       return(
-                        <ListGroupItem href={tech.url} target="_blank" hover className="p-1 d-inline-block text-truncate d-flex flex-column align-self-center techItem">
+                        <ListGroupItem key={index} href={tech.url} target="_blank" hover className="p-1 d-inline-block text-truncate d-flex flex-column align-self-center techItem">
                           {tech.name}
                         </ListGroupItem>
                         )}

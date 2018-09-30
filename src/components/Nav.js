@@ -52,7 +52,7 @@ class Nav extends Component {
         return (
             // <Router>
               <div>
-                <Navbar id="navbar" expand="md" fixed="top" transparent scrolling className="h6-responsive">
+                <Navbar id="navbar" expand="md" fixed="top" transparent="true" scrolling className="h6-responsive">
                     { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
                       <Collapse isOpen = { this.state.collapse } navbar>
                         <NavbarNav left>

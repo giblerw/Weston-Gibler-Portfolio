@@ -17,7 +17,7 @@ export const projects = [
       github: null,
       url: 'http://www.fwicloud.com/',
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/FWI.png', 'https://s3-us-west-2.amazonaws.com/miked-portfolio-site/clib.png', 'https://s3-us-west-2.amazonaws.com/miked-portfolio-site/clib-tables.png'],
-      objectId: 1,
+      objectId: 5,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/cloud.png',
     },
     {
@@ -39,7 +39,7 @@ export const projects = [
       github: 'https://github.com/Roofstops/Roofstops',
       url: null,
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/walkthroughcropped.gif', 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/roofstops-logo-2.png', ''],
-      objectId: 2,
+      objectId: 4,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/roof.png',
     },
     {
@@ -77,7 +77,7 @@ export const projects = [
       github: 'https://github.com/giblerw/Hall-of-Recall',
       url: 'https://the-hall-of-recall.herokuapp.com/',
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Hall_Screen.png', 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Hall_logo.PNG'],
-      objectId: 4,
+      objectId: 2,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/phaser.png',
     },
     {
@@ -95,7 +95,7 @@ export const projects = [
       github: 'https://github.com/giblerw/react-inbox',
       url: 'https://westons-react-inbox.firebaseapp.com/',
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/inboxScreen.png'],
-      objectId: 5,
+      objectId: 1,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/react.png',
     },
   ];
