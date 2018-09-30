@@ -3,18 +3,17 @@ import React, { Component } from 'react';
 const me =
   {
     whatIBring: [
-      'A contagious need to be continually learning about new, emerging technologies/industry trends.',
-      'Excellent communication skills, and experience in collaborative environments.',
-      'Years of managing experience; I\'m a pretty good guy to work with.',
       'Expert in web markup, including HTML5, CSS3 and javascript.',
       'Expert understanding of client-side scripting and javascript frameworks such as React and Redux.',
       'Proficient understanding of server-side CSS pre-processing platforms, such as LESS and SASS (I like SASS).',
       'Understanding of javascript pre-processing and packaging frameworks such as babel and webpack.',
-      'A solid understanding of Node.js.',
-      'A handle on asynchronous request, partial page updates, and AJAX.',
+      'Experience developing highly performant code and view layouts; able to diagnose performance bottlenecks',
+      'Experience with asynchronous requests, partial page updates, and AJAX.',
       'I\'m handy with adobe photoshop and illustrator.',
       'Awareness of cross-browser compatibility issues and workarounds.',
-      'I’ve been called a Git guru, but don\'t quote me.'
+      'Understanding of integrated development practices and experience directly collaborating with design teams',
+      'Excellent communication skills, and experience in collaborative environments.',
+      'Years of managing experience; I\'m a pretty good guy to work with.',
     ],
     whatIWant: [
       'Developing delightful UI features, by utilizing the most innovative, and scalable libraries available.',
@@ -25,7 +24,15 @@ const me =
       'Make software that is lean and mean.',
       'Enjoy the people I work with.',
     ],
-    techStack: {},
+    iOS: [
+      'Experience developing native iOS apps in Swift and some Objective-C.',
+      'Experience with networked applications and API delivery/consumption.',
+      'I have published personal apps on the app store.',
+      'Knowledge of iOS design patterns, frameworks and guidelines.',
+      'Experience with offline storage, threading, and performance tuning.',
+      'A familiarity with the iOS tool ecosystem for development, testing, debugging, and performance benchmarking.',
+      'Interested in privacy and the protection of personal information.',
+    ],
   }
 
 
@@ -33,7 +40,7 @@ class About extends Component {
 
   render() {
     return(
-      <div className="about_content" id="about">
+      <div id="about">
         <span className="row section_header">
           <div className="header_mask">
             <img className="header_logo" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/initialsBig.png" alt="golden_ratio" />
@@ -41,15 +48,15 @@ class About extends Component {
           </div>
         </span>
 
-        <div className="row">
+        <div className="row about_content">
           <div className="col-md-3 about-left">
-            <h3>I am a <br/> Colorado native...<br/>
+            <h3>I am cursed by an insatiable need to be incessantly learning...<br/>
               <img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/axHead.png" alt="axMan" className="about_img1" />
               <br /><h3>...and generally much happier than this picture would lead you to believe.</h3>
             </h3>
           </div>
           <div className="col-md-5 about-center">
-            <h2 className="about_header1">Skills I bring as a developer...</h2>
+            <h2 className="about_header1">Web specific skills:</h2>
             <blockquote className="about_bring_text">
               <ul>
                 {me.whatIBring.map(note => <li className="h5-responsive">{note}</li>)}
@@ -57,11 +64,11 @@ class About extends Component {
             </blockquote>
           </div>
           <div className="col-md-4 about-right">
-            <img className="about_triangle" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/gold.png" alt="triangle_logo" />
-            <h2 className="about_header2">Current focuses include:</h2>
+            <img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/swift.png" alt="swiftLogo" className="swiftLogo" />
+            <h2 className="about_header2">iOS specific skills:</h2>
             <p className="about_want_text">
               <ul>
-                {me.whatIWant.map(point => <li className="h5-responsive">{point}</li>)}
+                {me.iOS.map(point => <li className="h5-responsive">{point}</li>)}
               </ul>
             </p>
           </div>

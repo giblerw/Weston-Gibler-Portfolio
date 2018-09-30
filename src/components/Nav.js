@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
   Navbar,
-  NavItem,
+
   NavbarNav,
   NavbarToggler,
   NavbarBrand,
@@ -10,7 +10,7 @@ import {
   View,
   } from 'mdbreact';
 
-  import { NavLink } from 'react-router-dom'
+  // import { NavLink } from 'react-router-dom'
 
   // import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -61,37 +61,6 @@ class Nav extends Component {
                           </NavbarBrand>
                         </NavbarNav>
                         <NavbarNav right>
-                          <NavItem>  
-                            <NavLink
-                            to="/home"  
-                            class="btn btn-transparent active nav-link">
-                                Home
-                            </NavLink>
-                          </NavItem>  
-                          <NavItem>  
-                            <NavLink 
-                            to="/about" 
-                            class="btn btn-transparent nav-link" 
-                            >
-                                About Me
-                            </NavLink> 
-                          </NavItem>  
-                          <NavItem>  
-                            <NavLink 
-                            to="/projects" 
-                            class="btn btn-transparent nav-link"
-                            >
-                                Projects
-                            </NavLink>
-                          </NavItem>  
-                          <NavItem>  
-                            <NavLink 
-                            to="/resume" 
-                            class="btn btn-transparent nav-link"
-                            >
-                                R&#233;sum&#233;
-                            </NavLink>
-                          </NavItem> 
                         <Socials className="social_icons"/>
                         </NavbarNav>
                       </Collapse>
