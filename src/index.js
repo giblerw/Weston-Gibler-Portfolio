@@ -3,7 +3,7 @@
 // import 'mdbreact/dist/css/mdb.css';
 import React from "react";
 import { render } from "react-dom";
-// import "styles/_global-styles";
+import "./Style.css";
 
 import App from './App';
 

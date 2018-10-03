@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 
-import Header from "./components/Header/Header";
 import Container from "./components/Container";
+import Header from './components/Header/Header';
 
 class App extends Component {
   render() {
