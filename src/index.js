@@ -1,22 +1,11 @@
-import 'font-awesome/css/font-awesome.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'mdbreact/dist/css/mdb.css';
+// import 'font-awesome/css/font-awesome.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'mdbreact/dist/css/mdb.css';
 import React from "react";
 import { render } from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
-import "./global-styles";
+// import "styles/_global-styles";
 
-import Header from "./components/Header/Header";
-import Container from "./components/Container";
-
-const App = () => (
-  <Router>
-    <div>
-      <Header />
-      <Container />
-    </div>
-  </Router>
-);
+import App from './App';
 
 render(<App />, document.getElementById("root"));
 
