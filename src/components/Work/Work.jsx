@@ -3,7 +3,7 @@ import "./style.css";
 
 const ProjectDivider = () => {
   return (
-    <div className="project-divider"></div>
+    <div className="divider"></div>
   )
 };
 

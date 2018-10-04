@@ -1,0 +1,35 @@
+.profile-container {
+  background-color: rgb(255,0,0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-width: 100%;
+}
+
+.profile-title {
+  margin: 3% 0 0 0;
+}
+
+.profile-traits-row {
+  width: 100%;
+
+}
+
+.profile-traits-col {
+  /* height: 200px; */
+  background-color: rgb(0,0,255);
+}
+
+.profile-icon {
+  height: 150px;
+}
+
+.icon-title {
+  font-size: 1.5em;
+}
+
+.icon-text {
+  padding: 0 20px 0 20px;
+  font-size: 0.9em;
+}

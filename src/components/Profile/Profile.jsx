@@ -1,47 +1,44 @@
 import React from "react";
-import styled from "styled-components";
+import './style.css';
+
+const Divider = () => {
+  return (
+    <div className="divider"></div>
+  )
+};
 
 function Profile() {
   return (
-    <Wrapper>
-      <span>Second</span>
-      <section>
-        <p>
-          Morbi sodales at enim sed porttitor. Vestibulum vitae magna consequat,
-          faucibus felis non, fermentum lorem. Vivamus viverra est justo.
-          Suspendisse lacus nisi, ornare gravida lorem sit amet, iaculis
-          vulputate elit. Vivamus non erat at nunc egestas sagittis eget ac
-          urna. Proin ac iaculis ante. Proin tincidunt ipsum eu pharetra
-          lobortis. Nam auctor fermentum turpis, facilisis iaculis odio
-          hendrerit ac. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. In hendrerit, dolor eu consequat
-          porttitor, ante nibh sodales libero, a finibus nisl diam ac tellus.
-        </p>
-        <p>
-          Nulla ornare a dui pellentesque imperdiet. Fusce nec dolor semper,
-          aliquet risus eget, dignissim nisl. Vestibulum nec iaculis metus. Nam
-          vitae volutpat dui, non ultricies eros. Aenean vitae leo laoreet,
-          faucibus lorem a, sagittis libero. Nulla id dignissim augue. Quisque
-          laoreet tristique purus, eu rutrum mi consequat ut.
-        </p>
-      </section>
-    </Wrapper>
+    <div className="container profile-container" >
+      <div className="row title profile-title">About Me</div>
+      <div className="container icons-container">
+      <Divider className="row"/>
+      <div className="row profile-traits-row">
+        <div className="col-md-3 profile-traits-col">
+          <img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png" alt="placeholder image" className="profile-icon"/>
+          <div className="icon-title">Icon Title</div>
+          <p className="icon-text">Praesent eu lorem euismod, convallis nisl in, cursus metus. Cras dolor eros, fringilla id</p>
+        </div>
+        <div className="col-md-3 profile-traits-col">
+          <img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png" alt="placeholder image" className="profile-icon"/>
+          <div className="icon-title">Icon Title</div>
+          <p className="icon-text">Praesent eu lorem euismod, convallis nisl in, cursus metus. Cras dolor eros, fringilla id</p>
+        </div>
+        <div className="col-md-3 profile-traits-col">
+          <img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png" alt="placeholder image" className="profile-icon"/>
+          <div className="icon-title">Icon Title</div>
+          <p className="icon-text">Praesent eu lorem euismod, convallis nisl in, cursus metus. Cras dolor eros, fringilla id</p>
+        </div>
+        <div className="col-md-3 profile-traits-col">
+          <img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png" alt="placeholder image" className="profile-icon"/>
+          <div className="icon-title">Icon Title</div>
+          <p className="icon-text">Praesent eu lorem euismod, convallis nisl in, cursus metus. Cras dolor eros, fringilla id</p>
+        </div>
+      </div>
+      <Divider className="row"/>
+      </div>
+    </div>
   );
 }
-
-const Wrapper = styled.div`
-  min-height: calc(100vh - 50px);
-  background-color: #00bfff;
-  padding: 20px;
-
-  span {
-    color: #fff;
-    font-size: 40px;
-  }
-
-  section {
-    color: #fff;
-  }
-`;
 
 export default Profile;
