@@ -23,7 +23,7 @@ const RouteContainer = posed.div({
 const Container = ({ location }) => {
   return (
     <PoseGroup>
-      <RouteContainer key={location.key}>
+      <RouteContainer key={location.pathname}>
         <Switch location={location}>
           <Route exact path="/" component={Home} key="home"/>
           <Route path="/work" component={Work} key="work"/>

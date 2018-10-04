@@ -8,9 +8,9 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div >
-          <Header className="container"/>
-          <Container className="container"/>
+        <div>
+          <Header className="container" />
+          <Container className="container" />
         </div>
       </Router>
     )

@@ -1,5 +1,5 @@
 .work-container {
-  background-color: rgb(255,0,0);
+  /* background-color: rgb(255,0,0); */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -12,15 +12,47 @@
 }
 
 .gallery-row {
-  background-color: rgb(0,255,0);
+  /* background-color: rgb(0,255,0); */
   min-height: 600px;
 }
 
 .main {
-  background-color: rgb(0,0,255);
+  /* background-color: rgb(0,0,255); */
+}
+
+.work-title {
+  margin-top: 50px;
+}
+
+.work-subtitle {
+  margin-bottom: 50px;
+  padding: 2% 15% 0 15%;
+}
+
+.project-title {
+  font-size: 1.8em;
+}
+.project-button-group {
+  padding: 20px 0 20px 0;
+}
+
+.project-btn {
+  margin: 0 5px 0 5px;
 }
 
 .project-image {
-  max-height: 500px;
-  padding-top: 50px;
+  height: 50vh;
+  /* padding-top: 50px; */
+}
+
+.title-divider {
+  height: 1px;
+  margin: 0 30% 2% 30%;
+  background-color: rgb(0,0,0);
+}
+
+.project-divider {
+  height: 1px;
+  margin: 5%;
+  background-color: rgb(0,0,0);
 }

@@ -6,27 +6,14 @@ import './styles.css'
 
 class Header extends Component {
 
-  state = {
-    collapse1: false,
-    collapseID: ''
-  }
-
-  toggleCollapse = collapseID => () => {
-    this.setState(prevState => ({ collapseID: (prevState.collapseID !== collapseID ? collapseID : '') }));
-  }
-
-  toggleSingleCollapse = collapseId => {
-    this.setState({
-      ...this.state,
-      [collapseId]: !this.state[collapseId]
-    });
-  }
 render() {
   return (
     <nav id="header" className="navbar navbar-expand-sm bg-transparent justify-content-left">
         <ul className="navbar-nav">
           <li className="col nav-item">
-            <Link className="nav-link" to="/"><img id="brand" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/initials.png" alt="Logo" /></Link>
+            <Link className="nav-link" to="/">
+            <img id="brand" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/initials.png" alt="Logo" />
+            </Link>
           </li>
 
           <li className="col nav-item">
