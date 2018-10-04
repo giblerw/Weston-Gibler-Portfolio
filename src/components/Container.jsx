@@ -9,8 +9,15 @@ import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
 
 const RouteContainer = posed.div({
-  enter: { opacity: 1, delay: 300, beforeChildren: true },
-  exit: { opacity: 0 }
+  enter: {
+    opacity: 1,
+    delay: 400,
+    beforeChildren: true
+  },
+  exit: {
+    opacity: 0,
+    delay: 500,
+  }
 });
 
 const Container = ({ location }) => {
