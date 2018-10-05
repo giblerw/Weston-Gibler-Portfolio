@@ -60,7 +60,7 @@ export const projects = [
       photos: [],
       objectId: 4,
       icon: '',
-      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/hacker_mockup.png',
     },
 
     {
@@ -80,7 +80,7 @@ export const projects = [
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/pHoodz.gif'],
       objectId: 3,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/swift.png',
-      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/phoodz_mockup.png',
     },
     {
       title: 'Hall of Recall',
@@ -105,7 +105,7 @@ export const projects = [
     },
     {
       title: 'In a Box',
-      tagLine: 'an Email Inbox Clone',
+      tagLine: 'an Email Inbox Client',
       format: 'Single-Page Web App',
       mobile: false,
       stack: [
@@ -123,6 +123,14 @@ export const projects = [
       mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/inbox_mockup.png',
     },
   ];
+
+export const appStore = [
+  {
+    title: 'Rationalizer',
+    url: 'https://itunes.apple.com/us/app/rationalizer/id1436155050?ls=1&mt=8',
+    iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Rationalizer/App_Icon.png',
+  }
+]
 
 export const me =
   {

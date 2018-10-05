@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {projects, traits} from '../ProjectData';
+import { projects, appStore } from '../ProjectData';
 
 import "./style.css";
 
@@ -20,11 +20,11 @@ class Work extends Component {
         <div className="icon-title">App Store Pubications</div>
         <div className="row">
 
-          {traits.map(trait => {
+          {appStore.map(app => {
             return(
               <div className="col-md-3 profile-traits-col">
-                <img src={trait.icon} alt="placeholder" className="profile-icon"/>
-                <div className="icon-title">{trait.title}</div>
+                <img src={app.iconSrc} alt="placeholder" className="profile-icon"/>
+                <div className="icon-title">{app.title}</div>
               </div>
             )
           })}

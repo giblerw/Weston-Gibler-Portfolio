@@ -15,12 +15,15 @@
 }
 
 .profile-icon {
-  height: 150px;
-  padding: 2px 20px;
+  height: 90px;
+  padding: 2px 20px 2px 20px;
+  margin-bottom: 10px;
+  border-radius: 25%;
 }
 
 .icon-title {
   font-size: 1.5em;
+  font-weight: 600;
 }
 
 .icon-text {
