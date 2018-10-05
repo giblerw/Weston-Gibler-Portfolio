@@ -182,13 +182,13 @@ export const traits = [
   },
   {
     title: 'Intuitive Design',
-    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Play.png',
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Check.png',
     text: 'I advocate for ease of use; both for UI as well as within the code base.',
     traitId: 3,
   },
   {
     title: 'Responsive',
-    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Meter.png',
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Scales.png',
     text: 'Focused on positive working efficacity for users across all devices',
     traitId: 4,
   },

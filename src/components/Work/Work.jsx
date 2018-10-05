@@ -17,14 +17,14 @@ class Work extends Component {
 
         <div className="container project-gallery">
         <ProjectDivider />
-        <div className="icon-title">App Store Pubications</div>
+        <div className="project-subtitle text-muted">App Store Pubications</div>
         <div className="row">
 
           {appStore.map(app => {
             return(
               <div className="col-md-3 profile-traits-col">
-                <img src={app.iconSrc} alt="placeholder" className="profile-icon"/>
-                <div className="icon-title">{app.title}</div>
+                <a href={app.url} target="_blank"><img src={app.iconSrc} alt="placeholder" className="profile-icon"/></a>
+                <div className="app-title">{app.title}</div>
               </div>
             )
           })}

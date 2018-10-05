@@ -12,7 +12,7 @@ class Profile extends Component {
   render() {
     return (
       <div className="container profile-container" >
-        <div className="row title profile-title">My Guiding Principles</div>
+        <div className="row title profile-title">Guiding Principles</div>
         <div className="container icons-container">
         <Divider />
         <div className="row">

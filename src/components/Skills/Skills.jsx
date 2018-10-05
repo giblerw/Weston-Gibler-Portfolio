@@ -22,7 +22,7 @@ function Skills() {
       <div className="row title work-title">
       Skills
       </div>
-
+      <ProjectDivider />
       <div className="container project-gallery">
       <div className="skills-rowheader">Web Markup</div>
 
@@ -106,7 +106,7 @@ function Skills() {
 
 <div className="container project-gallery">
 <div className="icon-title skills-rowheader">The Others</div>
-<ProjectDivider />
+
 <div className="row">
   {other.map(skill => {
     return(
