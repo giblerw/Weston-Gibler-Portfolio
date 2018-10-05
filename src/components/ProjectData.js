@@ -1,7 +1,7 @@
 export const projects = [
     {
-      title: 'Campaign Manager',
-      tagLine: 'A Place for Many Spaces',
+      title: 'Four Winds Interactive, SaaS',
+      tagLine: 'Enterprise level, IoT Management',
       format: 'Cloud-based, IoT Manager',
       mobile: false,
       stack: [
@@ -13,12 +13,13 @@ export const projects = [
         {name: 'AWS Lambda', url: 'https://aws.amazon.com/lambda/'},
         {name: 'React-MD', url: 'https://github.com/mlaursen/react-md'},
       ],
-      info: 'Campaign Manager was just one of four modules being built for this enterprise. The main focus of the team was to build features that would scale well and would be easy for another developer to pick up and read. By utilizing the most current/tested technologies and libraries, this particular suite of IoT management and deployment tools is ready to scale up to its demand of 50,000 new cloud users within the first year of launch.',
+      info: 'The main focus of the team was to build out features that would scale well and devliver content as fast as possible. To do this, we used the most up-to-date technologies available, such as React and Redux for front end state management, as well as AWS for cloud services.',
       github: null,
       url: 'http://www.fwicloud.com/',
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/FWI.png', 'https://s3-us-west-2.amazonaws.com/miked-portfolio-site/clib.png', 'https://s3-us-west-2.amazonaws.com/miked-portfolio-site/clib-tables.png'],
       objectId: 5,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/cloud.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png',
     },
     {
       title: 'Roofstops',
@@ -41,6 +42,7 @@ export const projects = [
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/walkthroughcropped.gif', 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/roofstops-logo-2.png', ''],
       objectId: 4,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/roof.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png',
     },
     {
       title: 'pHOODz',
@@ -59,6 +61,7 @@ export const projects = [
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/pHoodz.gif'],
       objectId: 3,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/swift.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png',
     },
     {
       title: 'Hall of Recall',
@@ -79,6 +82,7 @@ export const projects = [
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Hall_Screen.png', 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Hall_logo.PNG'],
       objectId: 2,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/phaser.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png',
     },
     {
       title: 'In a Box',
@@ -97,10 +101,11 @@ export const projects = [
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/inboxScreen.png'],
       objectId: 1,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/react.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png',
     },
   ];
 
-const me =
+export const me =
   {
     whatIBring: [
       'Expert in web markup, including HTML5, CSS3 and javascript.',
@@ -134,3 +139,30 @@ const me =
       'Interested in privacy and the protection of personal information.',
     ],
   }
+
+export const traits = [
+  {
+    title: 'Understanding',
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Flame.png',
+    text: 'I have an ineluctable curiosity towards all things unknown to me.',
+    traitId: 1,
+  },
+  {
+    title: 'Precision',
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Search.png',
+    text: 'I enjoy using my obsessive nature to build things the right way.',
+    traitId: 2,
+  },
+  {
+    title: 'Intuitive Design',
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Play.png',
+    text: 'I advocate for ease of use; both for UI as well as within the code base.',
+    traitId: 3,
+  },
+  {
+    title: 'Responsive',
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Meter.png',
+    text: 'Focused on positive working efficacity for users across all devices',
+    traitId: 4,
+  },
+]
