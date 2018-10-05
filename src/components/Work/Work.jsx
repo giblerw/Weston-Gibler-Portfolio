@@ -34,7 +34,7 @@ const Work = () => {
                 <button className="project-btn">button 3</button>
               </span>
             </div>
-            <div><img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png" alt="placeholder project image" className="project-image"/></div>
+            <div><img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/800x800_Placeholder.png" alt="placeholder project" className="project-image"/></div>
           </div>
           <div className="col-md-2 side"></div>
         </div>

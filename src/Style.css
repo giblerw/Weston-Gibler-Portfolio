@@ -15,6 +15,15 @@ body {
 
 .divider {
   height: 1px;
-  margin: 5%;
+  margin: 60px 15% 60px 15%;
   background-color: rgb(0,0,0);
+}
+
+p.capitalize {
+    text-transform: capitalize;
+}
+
+p.uppercase {
+    text-transform: uppercase;
+    margin-bottom: 0;
 }

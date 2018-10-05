@@ -1,12 +1,12 @@
 import React from "react";
-import styled from "styled-components";
+import './style.css';
 
 function Contact() {
   return (
-    <Wrapper>
-      <span>Second</span>
-      <section>
-        <p>
+    <div className="container contact-container">
+      <span className="row">Second</span>
+      <section className="row">
+        <p className="col">
           Morbi sodales at enim sed porttitor. Vestibulum vitae magna consequat,
           faucibus felis non, fermentum lorem. Vivamus viverra est justo.
           Suspendisse lacus nisi, ornare gravida lorem sit amet, iaculis
@@ -17,7 +17,7 @@ function Contact() {
           et malesuada fames ac turpis egestas. In hendrerit, dolor eu consequat
           porttitor, ante nibh sodales libero, a finibus nisl diam ac tellus.
         </p>
-        <p>
+        <p className="col">
           Nulla ornare a dui pellentesque imperdiet. Fusce nec dolor semper,
           aliquet risus eget, dignissim nisl. Vestibulum nec iaculis metus. Nam
           vitae volutpat dui, non ultricies eros. Aenean vitae leo laoreet,
@@ -25,23 +25,8 @@ function Contact() {
           laoreet tristique purus, eu rutrum mi consequat ut.
         </p>
       </section>
-    </Wrapper>
+    </div>
   );
 }
-
-const Wrapper = styled.div`
-  min-height: calc(100vh - 50px);
-  background-color: #00bfff;
-  padding: 20px;
-
-  span {
-    color: #fff;
-    font-size: 40px;
-  }
-
-  section {
-    color: #fff;
-  }
-`;
 
 export default Contact;
