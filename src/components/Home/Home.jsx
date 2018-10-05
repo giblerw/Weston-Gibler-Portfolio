@@ -21,7 +21,7 @@ function Home() {
       <P2 key={2}>I'm a full stack, Web and iOS developer.</P2>
       </div>
       <section>
-        <Link to="/work">Learn More</Link>
+        <Link to="/work"><img src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/bending-arrow.jpg" alt="next" className="nextButton"/></Link>
       </section>
     </div>
   );

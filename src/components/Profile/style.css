@@ -16,7 +16,7 @@
 
 .profile-icon {
   height: 150px;
-  padding: 20px;
+  padding: 2px 20px;
 }
 
 .icon-title {
@@ -33,9 +33,21 @@
   position: relative;
 }
 
+.mission-header {
+  font-size: 1.2rem;
+}
+
 .profile-photo {
-  height: 400px;
-  padding: 5%;
+  border: 2px solid black;
+  height: 500px;
+  margin: 5%;
+  border-radius: 25%;
+}
+
+.profile-photo-2 {
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 300px;
 }
 
 .profile-left-text {
@@ -44,17 +56,29 @@
 
 .profile-right-text {
   text-align: left;
-  text-indent: 50px;
+  /* text-indent: 50px; */
 }
 
 .profile-section-header {
-  font-size: 1.6em;
+  font-size: 1.5rem;
+  margin: 2% 0 0 0;
+  font-weight: 300;
 }
 
-.profile-section-subheader {
-  border-left: 3px solid black;
-  margin-top: 10%;
-  padding-left: 20px;
+.profile-section-footer {
   font-size: 1.5rem;
+  margin-bottom: 145px;
+  padding: 0 25% 0 25%;
+  font-weight: 300;
+}
+
+.profile-blockquote {
+  border-left: 2px solid black;
+  padding-left: 20px;
+  font-size: 2rem;
   text-align: left;
+}
+
+.profile-blockquote-lg {
+  margin: 10% 0 10% 0
 }

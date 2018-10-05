@@ -16,7 +16,7 @@ const RouteContainer = posed.div({
   },
   exit: {
     opacity: 0,
-    delay: 500,
+    delay: 200,
   }
 });
 

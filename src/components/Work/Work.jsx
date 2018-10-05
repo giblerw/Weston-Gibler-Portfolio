@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {projects} from '../ProjectData';
+import {projects, traits} from '../ProjectData';
 
 import "./style.css";
 
@@ -17,6 +17,18 @@ class Work extends Component {
 
         <div className="container project-gallery">
         <ProjectDivider />
+        <div className="icon-title">App Store Pubications</div>
+        <div className="row">
+
+          {traits.map(trait => {
+            return(
+              <div className="col-md-3 profile-traits-col">
+                <img src={trait.icon} alt="placeholder" className="profile-icon"/>
+                <div className="icon-title">{trait.title}</div>
+              </div>
+            )
+          })}
+        </div>
         <ProjectDivider />
           {projects.map(project => {
             return (
@@ -26,16 +38,17 @@ class Work extends Component {
                 <div className="title-divider"></div>
                 <div className="project-title">{project.title}</div>
                 <div className="project-subtitle text-muted">"{project.tagLine}"</div>
-                <div className="title-divider"></div>
+
                 <div className="project-caption">{project.info}</div>
                 <div className="project-button-group">
                   <span>
-                    <button className="project-btn">button 1</button>
-                    <button className="project-btn">button 2</button>
-                    <button className="project-btn">button 3</button>
+                    <button className="project-btn">Github</button>
+                    <button className="project-btn">Website</button>
+                    <button className="project-btn">Gallery</button>
                   </span>
                 </div>
                 <img src={project.mainPhoto} alt="project_img" className="project-image"/>
+                <div className="title-divider"></div>
               </div>
               <div className="col-md-2 side"></div>
               <ProjectDivider />
