@@ -15,4 +15,6 @@ div.home-container {
 
 .nextButton {
   height: 100px;
+  margin-left: 75vw;
+  margin-top: 20vh;
 }

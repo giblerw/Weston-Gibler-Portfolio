@@ -20,6 +20,7 @@ export const projects = [
       objectId: 6,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/cloud.png',
       mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/fwi.png',
+      isPrivate: true,
     },
     {
       title: 'Roofstops',
@@ -43,6 +44,7 @@ export const projects = [
       objectId: 5,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/roof.png',
       mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/Asset+1.png',
+      isPrivate: false,
     },
     {
       title: 'Hacker Knewz',
@@ -61,6 +63,7 @@ export const projects = [
       objectId: 4,
       icon: '',
       mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/hacker_mockup.png',
+      isPrivate: false,
     },
 
     {
@@ -81,6 +84,7 @@ export const projects = [
       objectId: 3,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/swift.png',
       mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/phoodz_final.png',
+      isPrivate: false,
     },
     {
       title: 'Hall of Recall',
@@ -102,6 +106,7 @@ export const projects = [
       objectId: 2,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/phaser.png',
       mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/HallOfRecall_Mockup.png',
+      isPrivate: false,
     },
     {
       title: 'In a Box',
@@ -121,6 +126,7 @@ export const projects = [
       objectId: 1,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/react.png',
       mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/inbox_mockup.png',
+      isPrivate: false,
     },
   ];
 
