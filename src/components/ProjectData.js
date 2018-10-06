@@ -42,7 +42,7 @@ export const projects = [
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/walkthroughcropped.gif', 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/roofstops-logo-2.png', ''],
       objectId: 5,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/roof.png',
-      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Roof_iPhoneX_3.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/Asset+1.png',
     },
     {
       title: 'Hacker Knewz',
@@ -80,7 +80,7 @@ export const projects = [
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/pHoodz.gif'],
       objectId: 3,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/swift.png',
-      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/phoodz_mockup.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/phoodz_final.png',
     },
     {
       title: 'Hall of Recall',
