@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+#brand {
+  width: 40px;
+}
+
+.nav-bar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #222;
+}
+.nav-bar ul {
+  margin: 0;
+  padding: 0;
+}
+.nav-bar li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.nav-bar li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #green;
+}
+
+/*# sourceMappingURL=Header.css.map */

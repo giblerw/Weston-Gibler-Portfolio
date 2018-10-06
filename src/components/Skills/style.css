@@ -1,0 +1,14 @@
+.row {
+  justify-content:center;
+}
+
+.skills-column {
+  width: 75%;
+}
+
+.skills-rowheader {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-bottom: 35px;
+}

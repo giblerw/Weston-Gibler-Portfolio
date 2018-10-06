@@ -1,7 +1,7 @@
 export const projects = [
     {
-      title: 'Campaign Manager',
-      tagLine: 'A Place for Many Spaces',
+      title: 'Four Winds Interactive, SaaS',
+      tagLine: 'Enterprise level, IoT Management',
       format: 'Cloud-based, IoT Manager',
       mobile: false,
       stack: [
@@ -13,12 +13,13 @@ export const projects = [
         {name: 'AWS Lambda', url: 'https://aws.amazon.com/lambda/'},
         {name: 'React-MD', url: 'https://github.com/mlaursen/react-md'},
       ],
-      info: 'Campaign Manager was just one of four modules being built for this enterprise. The main focus of the team was to build features that would scale well and would be easy for another developer to pick up and read. By utilizing the most current/tested technologies and libraries, this particular suite of IoT management and deployment tools is ready to scale up to its demand of 50,000 new cloud users within the first year of launch.',
+      info: 'The main focus of the team was to build out features that would scale well and devliver content as fast as possible. To do this, we used the most up-to-date technologies available, such as React and Redux for front end state management, as well as AWS for cloud services.',
       github: null,
       url: 'http://www.fwicloud.com/',
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/FWI.png', 'https://s3-us-west-2.amazonaws.com/miked-portfolio-site/clib.png', 'https://s3-us-west-2.amazonaws.com/miked-portfolio-site/clib-tables.png'],
-      objectId: 5,
+      objectId: 6,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/cloud.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/fwi.png',
     },
     {
       title: 'Roofstops',
@@ -39,9 +40,29 @@ export const projects = [
       github: 'https://github.com/Roofstops/Roofstops',
       url: null,
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/walkthroughcropped.gif', 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/roofstops-logo-2.png', ''],
-      objectId: 4,
+      objectId: 5,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/roof.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Roof_iPhoneX_3.png',
     },
+    {
+      title: 'Hacker Knewz',
+      tagLine: 'Getting News the Right Way',
+      format: 'Frontend designed to be slim and fast',
+      mobile: false,
+      stack: [
+      {name: 'React', url: "https://reactjs.org/docs/hello-world.html"},
+      {name: 'Redux', url: 'https://redux.js.org/'},
+      {name: 'HackerNews API'},
+      ],
+      info: 'I built this Frontend to practice my skills in React. This sight stores the API response in a local cache for quicker repreated search queries. It is searchable and sortable, and automatically reloads the next page of results on scroll down. Simple and lightweight.',
+      github: 'https://github.com/giblerw/Hacker_Knewz',
+      url: 'https://thawing-basin-58776.herokuapp.com/',
+      photos: [],
+      objectId: 4,
+      icon: '',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/hacker_mockup.png',
+    },
+
     {
       title: 'pHOODz',
       tagLine: 'Match with Hott & Available... Food in your Hood',
@@ -59,6 +80,7 @@ export const projects = [
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/pHoodz.gif'],
       objectId: 3,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/swift.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/phoodz_mockup.png',
     },
     {
       title: 'Hall of Recall',
@@ -79,23 +101,223 @@ export const projects = [
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Hall_Screen.png', 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Hall_logo.PNG'],
       objectId: 2,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/phaser.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/HallOfRecall_Mockup.png',
     },
     {
       title: 'In a Box',
-      tagLine: 'an Email Inbox Clone',
+      tagLine: 'an Email Inbox Client',
       format: 'Single-Page Web App',
-      mobile: true,
+      mobile: false,
       stack: [
         {name: 'React', url: "https://reactjs.org/docs/hello-world.html"},
         {name: 'Bootstrap', url: "https://getbootstrap.com/"},
         {name: 'Firebase', url:"https://firebase.google.com/"},
         {name: 'JavaScript', url:"https://www.javascript.com/"},
       ],
-      info: 'This is an email inbox mockup; built using Facebook\'s React Frontend Library. React\'s component based rendering allows a developer to create "Single Page Applications" that are capable of immense complexity, while remaining performant. React\'s encapsulated components make the rendered views declarative; increasing code predictability and easing debugging practices.',
+      info: 'This is an single page email inbox client; built using React Frontend Library. The component based rendering allows a developer to create "Single Page Applications" that are capable of immense complexity, while remaining light weight and performant. React\'s encapsulated components make the rendered views declarative; increasing code predictability.',
       github: 'https://github.com/giblerw/react-inbox',
       url: 'https://westons-react-inbox.firebaseapp.com/',
       photos: ['https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/inboxScreen.png'],
       objectId: 1,
       icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/react.png',
+      mainPhoto: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/MockUps/inbox_mockup.png',
     },
   ];
+
+export const appStore = [
+  {
+    title: 'Rationalizer',
+    url: 'https://itunes.apple.com/us/app/rationalizer/id1436155050?ls=1&mt=8',
+    iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Rationalizer/App_Icon.png',
+  }
+]
+
+export const me =
+  {
+    whatIBring: [
+      'Expert in web markup, including HTML5, CSS3 and javascript.',
+      'Expert understanding of client-side scripting and javascript frameworks such as React and Redux.',
+      'Proficient understanding of server-side CSS pre-processing platforms, such as LESS and SASS (I like SASS).',
+      'Understanding of javascript pre-processing and packaging frameworks such as babel and webpack.',
+      'Experience developing highly performant code and view layouts; able to diagnose performance bottlenecks',
+      'Experience with asynchronous requests, partial page updates, and AJAX.',
+      'I\'m handy with adobe photoshop and illustrator.',
+      'Awareness of cross-browser compatibility issues and workarounds.',
+      'Understanding of integrated development practices and experience directly collaborating with design teams',
+      'Excellent communication skills, and experience in collaborative environments.',
+      'Years of managing experience; I\'m a pretty good guy to work with.',
+    ],
+    whatIWant: [
+      'Developing delightful UI features, by utilizing the most innovative, and scalable libraries available.',
+      'Building shareable component libraries; emphasizing code readability, not just functionality',
+      'Writing quality unit tests to facilitate debugging.',
+      'Stretch the UI/UX designs, in a scalable way.',
+      'Help set standards and best practices that make sense to the team.',
+      'Make software that is lean and mean.',
+      'Enjoy the people I work with.',
+    ],
+    iOS: [
+      'Experience developing native iOS apps in Swift and some Objective-C.',
+      'Experience with networked applications and API delivery/consumption.',
+      'I have published personal apps on the app store.',
+      'Knowledge of iOS design patterns, frameworks and guidelines.',
+      'Experience with offline storage, threading, and performance tuning.',
+      'A familiarity with the iOS tool ecosystem for development, testing, debugging, and performance benchmarking.',
+      'Interested in privacy and the protection of personal information.',
+    ],
+  }
+
+export const traits = [
+  {
+    title: 'Understanding',
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Flame.png',
+    text: 'I have an ineluctable curiosity towards all things unknown to me.',
+    traitId: 1,
+  },
+  {
+    title: 'Precision',
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Search.png',
+    text: 'I enjoy using my obsessive nature to build things the right way.',
+    traitId: 2,
+  },
+  {
+    title: 'Intuitive Design',
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Check.png',
+    text: 'I advocate for ease of use; both for UI as well as within the code base.',
+    traitId: 3,
+  },
+  {
+    title: 'Responsive',
+    icon: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Scales.png',
+    text: 'Focused on positive working efficacity for users across all devices',
+    traitId: 4,
+  },
+]
+
+export const skills = {
+  markup: [
+    {
+      name: 'HTML5',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/html.png',
+    },
+    {
+      name: 'JSX',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/jsx.png',
+    },
+    {
+      name: 'Handlebars',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/handlebars-js.png',
+    },
+    {
+      name: 'Markdown',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/markdown.png',
+    },
+  ],
+  style: [
+    {
+      name: 'CSS3',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/css.png',
+    },
+    {
+      name: 'SASS',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/sass.png',
+    },
+    {
+      name: 'Bootstrap',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/bootstrap-stack.png',
+    },
+    {
+      name: 'React Materialize',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/materialize.png',
+    },
+  ],
+  tools: [
+    {
+      name: 'React',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/react.png',
+    },
+    {
+      name: 'Redux',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/redux.png',
+    },
+    {
+      name: 'JavaScript',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/js.png',
+    },
+    {
+      name: 'Node',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/node.png',
+    },
+    {
+      name: 'ReactNative',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/react-native.png',
+    },
+    {
+      name: 'Angular',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/angular.png',
+    },
+    {
+      name: 'Swift',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/swift.png',
+    },
+  ],
+  back: [
+    {
+      name: 'PostgreSQL',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/postgresql.png',
+    },
+    {
+      name: 'Firebase',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/Firebase_data.jpeg',
+    },
+    {
+      name: 'ExpressJS',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/express.png',
+    },
+    {
+      name: 'Knex.js',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/knex.png',
+    },
+  ],
+  build: [
+    {
+      name: 'XCode',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/xcode.png',
+    },
+    {
+      name: 'Expo',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/expo.png',
+    },
+    {
+      name: 'WebPack',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/webpack.png',
+    },
+
+  ],
+  other: [
+    {
+      name: 'Github',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/GitHub.png',
+    },
+    {
+      name: 'Photoshop',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Photoshop.png',
+    },
+    {
+      name: 'Illustrator',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/illus.png',
+    },
+    {
+      name: 'Sketch',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/sketch.png',
+    },
+    {
+      name: 'Heroku',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/heroku.png',
+    },
+    {
+      name: 'Phaser.io',
+      iconSrc: 'https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/Tech/phaser.png',
+    },
+  ],
+}

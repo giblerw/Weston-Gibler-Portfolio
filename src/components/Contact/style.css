@@ -1,0 +1,107 @@
+.contact-title {
+  padding-top: 15%;
+}
+
+.contact-subtitle {
+  font-size: 1.5rem;
+}
+
+.contact-footer {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.contact-links {
+  margin: 70px 25% 70px 25%;
+  width:60%;
+}
+.contact-link {
+
+}
+
+.icon-button {
+	background-color: white;
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
+	margin: -2.5rem;
+}
+.email span {
+	background-color: #db5a3c;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.linked span {
+	background-color: #4099ff;
+}
+.github span {
+  background-color: #49d5dd;
+}
+
+/* Icons */
+.icon-button img {
+	background: none;
+	color: white;
+	height: 3.6rem;
+	left: 0;
+	line-height: 3.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 3.6rem;
+	z-index: 10;
+}
+.icon-button .icon-email {
+	color: #db5a3c;
+}
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+.icon-button .icon-linked {
+	color: #4099ff;
+}
+.icon-button .icon-github {
+  color: #49d5dd;
+}
+.icon-button:hover .icon-email,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-linked,
+.icon-button:hover .icon-github {
+	color: white;
+}

@@ -1,0 +1,87 @@
+.profile-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-width: 100%;
+}
+
+.profile-title {
+  margin: 3% 0 0 0;
+}
+
+.profile-icon {
+  height: 90px;
+  margin: 2px 20px 2px 20px;
+  /* margin-bottom: 10px; */
+  border-radius: 25%;
+}
+
+.icon-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.icon-text {
+  padding: 0 20px 0 20px;
+  font-size: 0.9em;
+}
+
+.profile-section {
+  padding: 0;
+  position: relative;
+}
+
+.mission-header {
+  font-size: 1.2rem;
+}
+
+.profile-photo {
+  border: 2px solid black;
+  height: 500px;
+  margin: 5%;
+  border-radius: 25%;
+}
+
+.profile-photo-2 {
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 300px;
+}
+
+.profile-left-text {
+  text-align: left;
+}
+
+.profile-right-text {
+  text-align: left;
+  /* text-indent: 50px; */
+}
+
+.profile-section-header {
+  font-size: 1.5rem;
+  margin: 2% 0 0 0;
+  font-weight: 300;
+}
+
+.profile-section-footer {
+  font-size: 1.5rem;
+  margin-bottom: 145px;
+  padding: 0 25% 0 25%;
+  font-weight: 600;
+}
+
+.profile-blockquote {
+  border-left: 2px solid black;
+  padding-left: 20px;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.profile-blockquote-lg {
+  margin: 10% 0 10% 0
+}
+
+.mission-header {
+  font-weight: 600;
+}

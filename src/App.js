@@ -1,34 +1,26 @@
 import React, { Component } from 'react';
-import Nav from './components/Nav';
-import Welcome from './components/Welcome';
-import About from './components/About';
-import Projects from './components/Projects';
-import CV from './components/CV';
-import Footer from './components/Footer';
+import { BrowserRouter as Router } from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
 
-import './App.css';
+import Container from "./components/Container";
+import Header from './components/Header/Header';
+
+library.add(faStroopwafel)
 
 class App extends Component {
-
   render() {
     return (
-      <div className="App parallax" data-spy="scroll" data-target=".navbar" data-offset="50">
-        <div className="container-fluid content" >
-            <Nav className="row layout_section" />
-
-            <Welcome className="row layout_section"/>
-
-            <About className="layout_section"/>
-
-            <Projects className="layout_section"/>
-
-            <CV className="layout_section"/>
-
-            <Footer className="layout_section" />
+      <Router>
+        <div>
+        <FontAwesomeIcon icon="faStroopwafel"/>
+          <Header className="container" />
+          <Container className="container" />
         </div>
-      </div>
-    );
+      </Router>
+    )
   }
-}
+};
 
 export default App;
