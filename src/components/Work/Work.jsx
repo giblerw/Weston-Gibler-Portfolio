@@ -42,9 +42,11 @@ class Work extends Component {
                 <div className="project-caption">{project.info}</div>
                 <div className="project-button-group">
                   <span>
-                    <button className="project-btn">Github</button>
-                    <button className="project-btn">Website</button>
-                    <button className="project-btn">Gallery</button>
+
+                    <a href={project.github} target="_blank" rel="noopener noreferrer"><button href={project.github} className="btn btn-default project-btn ">Github</button></a>
+
+                    <button className="btn btn-default project-btn disabled">Website</button>
+                    <button className="btn btn-default project-btn disabled">Gallery</button>
                   </span>
                 </div>
                 <img src={project.mainPhoto} alt="project_img" className="project-image"/>

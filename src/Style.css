@@ -6,6 +6,7 @@ body {
   color: rgba(0,0,0,.7);
   height: 100vh;
   font-weight: 200;
+  font-family: 'Space Mono', monospace;
 }
 
 .title {
@@ -40,3 +41,12 @@ p.uppercase {
 .icon-title {
   font-weight: 400;
 }
+
+.btn-default {
+      background: #000;
+      color: #fff;
+   }
+.btn-default:hover {
+    background: #fff;
+    color: #000;
+ }
