@@ -58,6 +58,6 @@
 
 .title-divider {
   height: 1px;
-  margin: 2% 30% 2% 30%;
-  background-color: rgb(0,0,0);
+  margin: 2% 20% 2% 20%;
+  background-color: rgb(0,0,0,0.2);
 }

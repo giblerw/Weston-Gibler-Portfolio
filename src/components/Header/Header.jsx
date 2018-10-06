@@ -11,10 +11,10 @@ render() {
       <Link className="navbar-brand" to="/">
       <img id="brand" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/initials.png" alt="Logo" />
       </Link>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDiv" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDiv" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDiv">
+      <div className="collapse navbar-collapse" id="navbarTogglerDiv">
         <ul className="navbar-nav">
 
           <li className="nav-item">

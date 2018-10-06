@@ -15,6 +15,7 @@
   margin: 2px 20px 2px 20px;
   /* margin-bottom: 10px; */
   border-radius: 25%;
+  border: 1px solid rgba(0,0,0,0.2);
 }
 
 .icon-title {
@@ -37,14 +38,14 @@
 }
 
 .profile-photo {
-  border: 2px solid black;
+  border: 1px solid rgba(0,0,0,0.2);
   height: 500px;
   margin: 5%;
   border-radius: 25%;
 }
 
 .profile-photo-2 {
-  border: 2px solid black;
+  border: 1px solid rgba(0,0,0,0.2);
   border-radius: 50%;
   height: 300px;
 }

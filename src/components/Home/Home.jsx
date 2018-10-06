@@ -5,12 +5,12 @@ import posed from 'react-pose';
 import './style.css';
 
 const P1 = posed.h1({
-  enter: { x: 0, y: 0, opacity: 1, delay: 300 },
-  exit: { x: -1000, y: 1000, opacity: 0, delay: 100 }
+  enter: { x: 0, y: 0, opacity: 1, delay: 400 },
+  exit: { x: -10, y: 0, opacity: 0, delay: 400 }
 });
 const P2 = posed.h1({
   enter: { x: 0, opacity: 1, delay: 500 },
-  exit: { x: -1550, opacity: 0, delay: 300 }
+  exit: { x: -15, opacity: 0, delay: 500 }
 });
 
 function Home() {

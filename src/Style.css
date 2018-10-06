@@ -17,7 +17,7 @@ body {
 .divider {
   height: 1px;
   margin: 20px 15% 20px 15%;
-  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.2);
 }
 
 p.capitalize {

@@ -2,8 +2,8 @@ import React from "react";
 
 import './style.css';
 
-
 function Contact() {
+
   return (
     <div className="container profile-container" >
       <div className="row col-8 title contact-title">
@@ -15,7 +15,7 @@ function Contact() {
       <div className="row contact-links">
 
         <div className="col contact-link">
-          <a href="westongibler.com" className="icon-button email"><img target="_blank" rel="noopener noreferrer" className="icon-email" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/social/Asset+3.png" alt="emailLink" /><span></span></a>
+          <a className="icon-button email" tabIndex="0" data-trigger="focus" type=" button" data-container="body" data-toggle="popover" data-placement="left" title="Email Me" data-content="WestonGibler@gmail.com"><img className="icon-email" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/social/Asset+3.png" alt="emailLink" /><span></span></a>
         </div>
 
         <div className="col contact-link">
