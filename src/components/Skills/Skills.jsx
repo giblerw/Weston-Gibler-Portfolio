@@ -20,17 +20,16 @@ function Skills() {
   return (
     <div className="container work-container">
       <div className="row title work-title">
-      Skills
+      <span>Skills</span>
+      <div className="row col divider"></div>
       </div>
       <ProjectDivider />
       <div className="container project-gallery">
       <div className="skills-rowheader">Web Markup</div>
-
-
       <div className="row">
         {markup.map(skill => {
           return(
-            <div className="col-lg-2 col-md-4 skills-column">
+            <div className="col-lg-3 col-md-4 skills-column">
               <img src={skill.iconSrc} alt="placeholder" className="profile-icon"/>
               <div className="skill-icon-title">{skill.name}</div>
             </div>
@@ -46,7 +45,7 @@ function Skills() {
     <div className="row">
       {style.map(skill => {
         return(
-          <div className="col-md-3 profile-traits-col">
+          <div className="col-lg-3 col-md-4 skills-column">
             <img src={skill.iconSrc} alt="placeholder" className="profile-icon"/>
             <div className="skill-icon-title">{skill.name}</div>
           </div>
@@ -62,7 +61,7 @@ function Skills() {
   <div className="row">
     {tools.map(skill => {
       return(
-        <div className="col-md-3 profile-traits-col">
+        <div className="col-lg-3 col-md-4 skills-column">
           <img src={skill.iconSrc} alt="placeholder" className="profile-icon"/>
           <div className="skill-icon-title">{skill.name}</div>
         </div>
@@ -78,7 +77,7 @@ function Skills() {
 <div className="row">
   {back.map(skill => {
     return(
-      <div className="col-md-3 profile-traits-col">
+      <div className="col-lg-3 col-md-4 skills-column">
         <img src={skill.iconSrc} alt="placeholder" className="profile-icon"/>
         <div className="skill-icon-title">{skill.name}</div>
       </div>
@@ -94,7 +93,7 @@ function Skills() {
 <div className="row">
   {build.map(skill => {
     return(
-      <div className="col-md-3 profile-traits-col">
+      <div className="col-lg-3 col-md-4 skills-column">
         <img src={skill.iconSrc} alt="placeholder" className="profile-icon"/>
         <div className="skill-icon-title">{skill.name}</div>
       </div>
@@ -106,11 +105,10 @@ function Skills() {
 
 <div className="container project-gallery">
 <div className="icon-title skills-rowheader">The Others</div>
-
 <div className="row">
   {other.map(skill => {
     return(
-      <div className="col-md-3 profile-traits-col">
+      <div className="col-lg-3 col-md-4 skills-column">
         <img src={skill.iconSrc} alt="placeholder" className="profile-icon"/>
         <div className="skill-icon-title">{skill.name}</div>
       </div>

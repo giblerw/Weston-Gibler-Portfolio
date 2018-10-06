@@ -1,10 +1,9 @@
 .row {
-  justify-content: space-around;
-
+  justify-content:center;
 }
 
 .skills-column {
-
+  width: 75%;
 }
 
 .skills-rowheader {
