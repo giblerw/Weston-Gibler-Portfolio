@@ -15,7 +15,7 @@ function Contact() {
       <div className="row contact-links">
 
         <div className="col contact-link">
-          <a className="icon-button email" tabIndex="0" data-trigger="focus" type=" button" data-container="body" data-toggle="popover" data-placement="left" title="Email Me" data-content="WestonGibler@gmail.com"><img className="icon-email" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/social/Asset+3.png" alt="emailLink" /><span></span></a>
+          <a className="icon-button email" tabIndex="0" data-trigger="focus" data-container="body" data-toggle="popover"><img className="icon-email" src="https://s3.us-east-2.amazonaws.com/weston-gibler-portfolio/Icons/social/Asset+4.png" alt="emailLink" /><span></span></a>
         </div>
 
         <div className="col contact-link">

@@ -12,3 +12,8 @@
   text-align: left;
   padding-bottom: 35px;
 }
+
+.skill-icon {
+  height: 100px;
+  margin: 2px 20px 2px 20px;
+}

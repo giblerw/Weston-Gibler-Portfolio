@@ -30,7 +30,7 @@ function Skills() {
         {markup.map(skill => {
           return(
             <div className="col-lg-3 col-md-4 skills-column">
-              <img src={skill.iconSrc} alt="placeholder" className="profile-icon"/>
+              <img src={skill.iconSrc} alt="placeholder" className="skill-icon"/>
               <div className="skill-icon-title">{skill.name}</div>
             </div>
           )
@@ -46,7 +46,7 @@ function Skills() {
       {style.map(skill => {
         return(
           <div className="col-lg-3 col-md-4 skills-column">
-            <img src={skill.iconSrc} alt="placeholder" className="profile-icon"/>
+            <img src={skill.iconSrc} alt="placeholder" className="skill-icon"/>
             <div className="skill-icon-title">{skill.name}</div>
           </div>
         )
@@ -62,7 +62,7 @@ function Skills() {
     {tools.map(skill => {
       return(
         <div className="col-lg-3 col-md-4 skills-column">
-          <img src={skill.iconSrc} alt="placeholder" className="profile-icon"/>
+          <img src={skill.iconSrc} alt="placeholder" className="skill-icon"/>
           <div className="skill-icon-title">{skill.name}</div>
         </div>
       )
@@ -78,7 +78,7 @@ function Skills() {
   {back.map(skill => {
     return(
       <div className="col-lg-3 col-md-4 skills-column">
-        <img src={skill.iconSrc} alt="placeholder" className="profile-icon"/>
+        <img src={skill.iconSrc} alt="placeholder" className="skill-icon"/>
         <div className="skill-icon-title">{skill.name}</div>
       </div>
     )
@@ -94,7 +94,7 @@ function Skills() {
   {build.map(skill => {
     return(
       <div className="col-lg-3 col-md-4 skills-column">
-        <img src={skill.iconSrc} alt="placeholder" className="profile-icon"/>
+        <img src={skill.iconSrc} alt="placeholder" className="skill-icon"/>
         <div className="skill-icon-title">{skill.name}</div>
       </div>
     )
@@ -109,7 +109,7 @@ function Skills() {
   {other.map(skill => {
     return(
       <div className="col-lg-3 col-md-4 skills-column">
-        <img src={skill.iconSrc} alt="placeholder" className="profile-icon"/>
+        <img src={skill.iconSrc} alt="placeholder" className="skill-icon"/>
         <div className="skill-icon-title">{skill.name}</div>
       </div>
     )
